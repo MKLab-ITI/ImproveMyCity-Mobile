@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Improvemycity-mobile by MKLab-ITI</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="index">Improvemycity-mobile</a></h1>
+        <p>The Android mobile version of the web-based ImproveMyCity application</p>
+
+        <p class="view"><a href="https://github.com/MKLab-ITI/ImproveMyCity-Mobile">View the Project on GitHub <small>MKLab-ITI/ImproveMyCity-Mobile</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/MKLab-ITI/ImproveMyCity-Mobile/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/MKLab-ITI/ImproveMyCity-Mobile/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/MKLab-ITI/ImproveMyCity-Mobile">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+      <h1>Developer Guide</h1>
+      <h2>General communication framework</h2>
+
+      <p>The communication framework is built based on the http and https protocols. The mobile client communicates with the backed-end infrastructure of the Improve-My-City Joomla component (https://github.com/icos-urenio/Improve-my-city/wiki) by calling URLs from the remote server and receiving string data as a response, as shown in Figure 1.</p>
+
+      <img src="img/dev01.png" />
+      <figure>Figure 1: Communication of mobile client is achieved through PHP calls and JSON strings.</figure>
+
+      <p>The mobile application calls the URL of the PHP script that corresponds to a user action along with its parameters, e.g. download 40 nearby issues. The response from the server is string data in JSON (JavaScript Object Notation) format. The URLs of the PHP scripts are predefined by the Improve-My-City Joomla component and therefore there is no need for severe modifications on server side. The modifications that should be performed are: a) “JSON” should be set to enabled, and b) “Encryption key” should match the one used in the mobile application.</p>
+      <p>These can be modified in the administrator side of Joomla in Improve-My-City component following the <a href="https://github.com/icos-urenio/Improve-My-City/wiki/Improve-my-city-API">instructions</a>. JSON activation enables communication with the mobile client. The encryption key is used for decrypting the user password sent by the mobile client encrypted with the same predefined key. Details for setting the encryption key are available under (ling to ReadMeCustomize.docx). Images are received by calling their URLs with byte streaming and submitted with the POST command. See also the following screenshots.</p> 
+
+      <img src="img/imcm03.png" />
+      <img src="img/imcm02.png" />
+      <br />
+      <br />
+     
+
+      <h2>Android code architecture</h2>
+      <p>The mobile client is written in JAVA that enables fast applications with access to hardware and software components of Android core. A graph showing the main functionalities of the application is given in Figure 2. Location_Service is a service that tracks user position (longitude and latitude) from information taken from GPS or Wi-fi. This information triggers the downloading of data. Data_Service downloads issues, images, categories, and votes. This data is stored locally in a SQLite database in the mobile device so that issues are visible also when the device is offline. Comments are not stored locally. Data like new issues or new votes/comments are uploaded with class Upload_Data with http/php protocol where the parameters of the php is the data to send.</p>
+
+      <img src="img/dev02.png" />
+      <figure>Figure 2: Inner architecture of the application.</figure>
+
+      <p>The code is split into the following packages:</p>
+      <table>
+        <tr>
+          <td><strong>com.mk4droid.IMC_Activities</strong></td>
+          <td>Activities (windows) of the application.</td>
+        </tr>
+        <tr>
+          <td><strong>com.mk4droid.IMC_Constructors</strong></td>
+          <td>Constructors of Objects needed for the application.</td>
+        </tr>
+        <tr>
+          <td><strong>com.mk4droid.IMC_Core</strong></td>
+          <td>Custom implementations that improve the visualization of the application.
+</td>
+        </tr>
+        <tr>
+          <td><strong>com.mk4droid.IMC_Services</strong></td>
+          <td>Localization and Downloading-storing-uploading data
+</td>
+        </tr>
+        <tr>
+          <td><strong>com.mk4droid.IMC_Store</strong></td>
+          <td>Communication and security constants of the application
+</td>
+        </tr>
+        <tr>
+          <td><strong>com.mk4droid.IMC_Utils</strong></td>
+          <td>Various utilities regarding time transformations, reverse geocoding, and file copy
+</td>
+        </tr>
+
+      </table>
+
+      <p>More details can be found in the javadoc that is included in the project folder.</p>
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/MKLab-ITI">MKLab-ITI</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
