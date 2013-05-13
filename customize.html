@@ -29,7 +29,49 @@
       </header>
       <section>
       <h1>Customize</h1>
+      <p>ImproveMyCity-Mobile is written with Eclipse using the <a href="http://developer.android.com/tools/sdk/eclipse-adt.html">android developer tool (ADT)</a> and <a href="http://developer.android.com/sdk/index.html">Android SDK</a>. Be sure that you have already installed them in your machine, in order to modify the source code.
+      The mobile application is developed to communicate with the back-end Joomla component of ImproveMyCity web application. So in order to achieve the full functionality of the mobile app you need also to follow the instructions for <a href="https://github.com/icos-urenio/Improve-my-city/wiki">installing ImproveMyCity</a>.</p>
+      <h2>Client side</h2>
+      <p>In order for ImproveMyCity-Mobile to work for your municipality, several parameters should be changed. These parameters are located in three places:</p>
+      <ul>
+        <li>src/com.mk4droid.IMC_Activities/IMC_Store.Constants.java</li>
+        <li>res/values/strings.xml</li>
+        <li>res/xml/myprefs.xml</li>
+      </ul>
+<p>In <strong>IMC_Store.Constants.java</strong> you should modify the following parameters:</p>
+<p><strong>1. Server address</strong>. It can be textual or numeric (XXX.XXX.XXX.XXX), e.g. ServerSTR = "smartcity.thermi.gov.gr";</p>
+<p><strong>2. Server inner path</strong>. It will be concatenated after ServerSTR
+phpExec = "/improve/el";</p>
+<p><strong>3. Server path of issues’ images</strong>
+remoteImages = "/improve/";</p>
+<p><strong>4. Encryption key for the secure transmission of IMC password</strong>. It should match the one in ImproveMyCity joomla component. The default value is
+EncKey = "1234567890123456";</p>
+<p><strong>5. Geographical limits</strong> (rectangle) from where issues can be sent (North, South, East, West). Default values are
+AppGPSLimits = {40.57, 40.41, 23.24, 22.93};</p>
+<p><strong>6. Usage analytics</strong> key for Flurry analytics that monitors usage of application see www.flurry.com.
+Flurry_Key = "your_key_goes_here”;</p>
 
+<p>In <strong>res/values/strings.xml</strong></p>
+
+<p><strong>7. Google map api key.</strong> You should have two map api keys: 1) for debugging related to your android debug key; 2) for release version related to your android release key. See in android developer about how to generate map api keys according to your android key.</p>
+<p>&lt;string name="google_map_api_key" translatable="false"&gt;your_key_here&lt;/string&gt;</p>
+
+
+<p>In <strong>res/xml/myprefs.xml</strong></p>
+
+<p><strong>8. Default UI language</strong> (line 33). Default is English (en). Optional Greek is supported (el).</p>
+<p>android:defaultValue="en"</p>
+<p><strong>9. Usage analytics</strong> by using Flurry library is by default “false”. It can be modified in line 63</p>
+
+<p>android:defaultValue="false"</p>
+
+<p>Compile the application and you are done!</p>
+
+<h2>Server Side</h2>
+<p>The only setting is to define the exact same API in Joomla administrator as shown in the screenshot</p>
+<img src="http://mklab.iti.gr/imc/imcm03.png" />
+<p>Also make sure you have enable json controller on IMC Options</p>
+<img src="http://mklab.iti.gr/imc/imcm02.png" />
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/MKLab-ITI">MKLab-ITI</a></p>
