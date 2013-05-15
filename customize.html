@@ -34,16 +34,17 @@
       <h2>Client side</h2>
       <p>In order for ImproveMyCity-Mobile to work for your municipality, several parameters should be changed. These parameters are located in three places:</p>
       <ul>
-        <li>src/com.mk4droid.IMC_Activities/IMC_Store.Constants.java</li>
+        <li>src/com/mk4droid/IMC_Store/Constants_API.java</li>
         <li>res/values/strings.xml</li>
         <li>res/xml/myprefs.xml</li>
       </ul>
 <p>In <strong>IMC_Store.Constants.java</strong> you should modify the following parameters:</p>
 <p><strong>1. Server address</strong>. It can be textual or numeric (XXX.XXX.XXX.XXX), e.g. ServerSTR = "smartcity.thermi.gov.gr";</p>
-<p><strong>2. Server inner path</strong>. It will be concatenated after ServerSTR
-phpExec = "/improve/el";</p>
-<p><strong>3. Server path of issues’ images</strong>
-remoteImages = "/improve/";</p>
+<p><strong>2. Server inner path</strong>. Inner path (concatenated after ServerSTR) where the PHP scripts are stored on the Server, e.g. phpExec = "/improve/el"; </p>
+<p><strong>3. Server path of issues’ images</strong>. Inner path (concatenated after ServerSTR) where the images are stored on the Server, e.g.  remoteImages = "/improve/";
+
+
+</p>
 <p><strong>4. Encryption key for the secure transmission of IMC password</strong>. It should match the one in ImproveMyCity joomla component. The default value is
 EncKey = "1234567890123456";</p>
 <p><strong>5. Geographical limits</strong> (rectangle) from where issues can be sent (North, South, East, West). Default values are
@@ -59,16 +60,23 @@ Flurry_Key = "your_key_goes_here”;</p>
 
 <p>In <strong>res/xml/myprefs.xml</strong></p>
 
-<p><strong>8. Default UI language</strong> (line 33). Default is English (en). Optional Greek is supported (el).</p>
-<p>android:defaultValue="en"</p>
-<p><strong>9. Usage analytics</strong> by using Flurry library is by default “false”. It can be modified in line 63</p>
+<p><strong>8. Default UI language. In order to change the default user language changes in two files should be made</strong> 
+<div style="padding-left: 2em;">
+<p>1. res/xml/myprefs.xml<br />
+  (line 27). Define the Menu language by setting the android:defaultValue parameter, e.g. android:defaultValue="en - English".  Default is English ("en - English"). Greek is also supported ("el - Ελληνικά"). See <a href="language">how to add a new language</a> for more details.</p>
 
-<p>android:defaultValue="false"</p>
+<p>2. IMC_Store/Constants_API.java<br />
+  change the variable
+public static String DefaultLanguage = "en - English";
+perform the same changes as in 1.</p>
+</div>
+
+<p><strong>9. Usage analytics</strong>  by using Flurry library is by default “false”. It can be modified in line 58, e.g. android:defaultValue="true"</p>
 
 <p>Compile the application and you are done!</p>
 
 <h2>Server Side</h2>
-<p>The only setting is to define the exact same API in Joomla administrator as shown in the screenshot</p>
+<p>The only setting is to define the exact same API KEY in Joomla administrator as shown in the screenshot</p>
 <img src="img/imcm03.png" />
 <p>Also make sure you have enable json controller on IMC Options</p>
 <img src="img/imcm02.png" />
