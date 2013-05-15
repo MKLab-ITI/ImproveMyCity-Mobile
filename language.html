@@ -29,9 +29,32 @@
       </header>
       <section>
       <h1>Language</h1>
+<p>The menu language of ImproveMyCity-Mobile is currently available in two languages whose resources can be found under the ./res/ folder, e.g.</p>
 
+<p>English (./res/values/strings.xml):<br />
+<a href="https://github.com/MKLab-ITI/ImproveMyCity-Mobile/blob/master/res/values/strings.xml">https://github.com/MKLab-ITI/ImproveMyCity-Mobile/blob/master/res/values/strings.xml</a></p>
+
+<p>
+Greek (./res/values-el/strings.xml):<br />
+<a href="https://github.com/MKLab-ITI/ImproveMyCity-Mobile/blob/master/res/values-el/strings.xml">https://github.com/MKLab-ITI/ImproveMyCity-Mobile/blob/master/res/values-el/strings.xml</a></p>
     
+<p>In order to add a new language you need to create a new folder under the  ./res/ folder,  named as values-“MyLangAbbreviation”, e.g. ./res/values-de/ for German. Then you need to copy the strings.xml file from the English version (i.e. ./res/values/strings.xml) in the new folder and translate the string values. e.g.</p>
 
+<pre>
+ &lt;string name="minutes"&gt;minutes&lt;/string&gt;
+      to
+&lt;string name="minutes"&gt;minuten&lt;/string&gt;
+</pre>
+
+<p>In order for the new language to become visible through the Setup menu for all languages you need to add a string entry to line (249) in the strings.xml file for all language folders. For instance in our case, you need to modify the ./res/values/strings.xml, the ./res/values-el/strings.xml, and the ./res/values-de/strings.xml and add a new entry as shown below:</p>
+
+<pre>
+&lt;string-array name="Language"&gt;
+        &lt;item>el - Ελληνικά&lt;/item&gt;
+        &lt;item>en - English&lt;/item&gt;
+        &lt;item>de - Deutsch&lt;/item&gt;
+&lt;/string-array&gt;
+</pre>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/MKLab-ITI">MKLab-ITI</a></p>
