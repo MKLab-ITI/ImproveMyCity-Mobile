@@ -47,15 +47,15 @@
 </p>
 <p><strong>4. Encryption key for the secure transmission of IMC password</strong>. It should match the one in ImproveMyCity joomla component. The default value is
 EncKey = "1234567890123456";</p>
-<p><strong>5. Geographical limits</strong> (rectangle) from where issues can be sent (North, South, East, West). Default values are
-AppGPSLimits = {40.57, 40.41, 23.24, 22.93};</p>
-<p><strong>6. Usage analytics</strong> key for Flurry analytics that monitors usage of application see www.flurry.com.
+<p><strong>5. Geographical limits</strong> (rectangle) from where issues can be sent (North, South, East, West). Default values are set to cover the entire globe, i.e. AppGPSLimits =   {90, -90, 180, -180};</p>
+<p><strong>6. (Optional) Usage analytics</strong> key for Flurry analytics that monitors usage of application see www.flurry.com.
 Flurry_Key = "your_key_goes_here”;</p>
 
 <p>In <strong>res/values/strings.xml</strong></p>
 
 <p><strong>7. Google map api key.</strong> You should have two map api keys: 1) for debugging related to your android debug key; 2) for release version related to your android release key. See in android developer about how to generate map api keys according to your android key.</p>
-<p>&lt;string name="google_map_api_key" translatable="false"&gt;your_key_here&lt;/string&gt;</p>
+
+<p>fter obtaining the Google map api key it should be placed as shown below:<br />&lt;string name="google_map_api_key" translatable="false"&gt;your_key_here&lt;/string&gt;</p>
 
 
 <p>In <strong>res/xml/myprefs.xml</strong></p>
@@ -63,7 +63,7 @@ Flurry_Key = "your_key_goes_here”;</p>
 <p><strong>8. Default UI language. In order to change the default user language changes in two files should be made</strong> 
 <div style="padding-left: 2em;">
 <p>1. res/xml/myprefs.xml<br />
-  (line 27). Define the Menu language by setting the android:defaultValue parameter, e.g. android:defaultValue="en - English".  Default is English ("en - English"). Greek is also supported ("el - Ελληνικά"). See <a href="language">how to add a new language</a> for more details.</p>
+  (line 27). Define the Menu language by setting the android:defaultValue parameter, e.g. android:defaultValue="en - English".  Default is English ("en - English"). Greek is also supported ("el - Ελληνικά"). See <a href="language">how to add a new language</a> if you want to add a language that is not currently supported.</p>
 
 <p>2. IMC_Store/Constants_API.java<br />
   change the variable
