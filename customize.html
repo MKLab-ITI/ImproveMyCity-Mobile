@@ -56,18 +56,15 @@ Flurry_Key = "your_key_goes_here”;</p>
 
 <p>In <strong>raw/polygoncoords.txt</strong></p>
 
-<p><strong>6. Geographical limits</strong> (polygon) from where issues can be sent are defined as pairs of Longitude,Latitude. Longitude is separated with comma from Latitude. Points are separated with white space, e.g.  23.1094,40.5789 23.1111,40.5781 23.1126,40.5774 23.1094,40.5789                
-     
-The polygon should be closed, i.e. first point should match last point. Latitude and Longitude can be obtained by from GoogleMaps by right-clicking on the desired points and selecting “What is here”. A better way is to generate a polygon from Google-Earth app and export it as a kml file (remove the altitude information ",0");</p>
+<p><strong>6. Geographical limits</strong> (polygon) from where issues can be sent are defined as pairs of Longitude,Latitude. Longitude is separated with comma from Latitude. Points are separated with white space, e.g. "23.1094,40.5789 23.1111,40.5781 23.1126,40.5774 23.1094,40.5789". The polygon should be closed, i.e. first point should match last point. Latitude and Longitude can be obtained by from GoogleMaps by right-clicking on the desired points and selecting “What is here”. A better way is to generate a polygon from Google-Earth app and export it as a kml file (remove the altitude information ",0");</p>
 
 <p>In <strong>AndroidManifest.xml</strong></p>
 
 <p><strong>7. Google map api key.</strong> You should have two map api keys: 1) for debugging related to your android debug key; 2) for release version related to your android release key. See in android developer <a href="https://developers.google.com/maps/documentation/android/">here</a> about how to generate map api keys according to your android debug or release key. Only Google Maps Android API v2 is supported.
 
-After obtaining the Google map api key it should be placed as shown below:
-<![CDATA[<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="XXXXXXXXXXXXXXXXXXXXXXXXXXX"]]/>>.</p>
+<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="XXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
 
-<p>After obtaining the Google map api key it should be placed as shown below:<br />&lt;string name="google_map_api_key" translatable="false"&gt;your_key_here&lt;/string&gt;</p>
+<p>After obtaining the Google map api key it should be placed as shown below:<br />&lt;meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="your_key_here" /&gt;</p>
 
 
 <p>In <strong>res/xml/myprefs.xml</strong></p>
