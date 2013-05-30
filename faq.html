@@ -29,27 +29,9 @@
       </header>
       <section>
       <h1>FAQ</h1>
-      <h2>Q1. Upon loading the ImproveMyCity_Project I get multiple build errors.</h2>
-      <p>This is most probably because the Google APIs are not installed in your machine. Check if the errors are generated from the absense of the com.google.android.maps package. If this is the case follow Q2 and Q3.</p>
-      
-      <h2>Q2. How to download the Google APIs in my system?</h2>
-	    <p> Follow the steps below:</p>
-      <ul>
-        <li>Click on Android SDK Manager.</li>
-        <li>Select the tick-box next to Android 2.2 (API 8) and press Install Packages.</li>
-        <li>Restart your Eclipse IDE so as the newly installed packages to become visible.</li>
-		    <li>See Q.3 on how to load the Google APIs in your build path.</li>
-      </ul>
-	    <p> The application has been tested with Android 2.2 (API 8), so you are advised to use this version.</p>
-	  
-	  <h2>Q3. How to include Google APIs in my build path?</h2>
-	    <p> Follow the steps below:</p>
-      <ul>
-        <li>Right-click on ImproveMyCity_Project from the Package Explorer and select properties.</li>
-        <li>Select Android from the options on the left column.</li>
-        <li>The Google APIs option should appear within the Project Build Target frame. Select the tick-box next to Google APIs and press OK. All build errors should disappear.</li>
-		    <li>If the Google APIs does not appear within the Projecct Build Target frame, then the Google APIs are not installed in your machine. See Q.2 on how to download them from the Eclipse IDE.</li>
-      </ul>
+      <h2>Q1. How to compile with google maps v2?</h2>
+      <p>In order to compile the app you need a) to install the "Google Play Services" plug-in via Android SDK Manager; and b) import the "google-play-services_lib" library project into your workspace. In Eclipse select "Window" > "Android SDK Manager". Scroll to the bottom of the package list and select "Extras" > "Google Play services". The Google Play services SDK is downloaded to your computer and installed in your Android SDK environment at <android-sdk-folder>/extras/google/google_play_services/. In order to import "google-play-services_lib" project into your workspace in eclipse: Click "File" -> "Import", select "Android" -> "Existing Android Code into Workspace". Browse to and select <android-sdk-folder>/extras/google/google_play_services/libproject/google-play-services_lib. Details can be found in Google Maps API v2 documentation pages <a href="https://developers.google.com/maps/documentation/android/">here</a></p>
+           
 
       </section>
       <footer>
