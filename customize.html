@@ -33,11 +33,12 @@
       
       The mobile application is developed to communicate with the back-end Joomla component of ImproveMyCity web application. So in order to achieve the full functionality of the mobile app you need also to follow the instructions for <a href="https://github.com/icos-urenio/Improve-my-city/wiki">installing ImproveMyCity</a>.</p>
       <h2>Client side</h2>
-      <p>In order for ImproveMyCity-Mobile to work for your municipality, several parameters should be changed. These parameters are located in three places:</p>
+      <p>In order for ImproveMyCity-Mobile to work for your municipality, several parameters should be changed. These parameters are located in four places:</p>
       <ul>
         <li>src/com/mk4droid/IMC_Store/Constants_API.java</li>
-        <li>res/values/strings.xml</li>
+        <li>AndroidManifest.xml</li>
         <li>res/xml/myprefs.xml</li>
+        <li>raw/polygoncoords.txt</li>
       </ul>
 <p>In <strong>IMC_Store.Constants.java</strong> you should modify the following parameters:</p>
 <p><strong>1. Server address</strong>. It can be textual or numeric (XXX.XXX.XXX.XXX), e.g. ServerSTR = "smartcitydemos.urenio.org";</p>
@@ -46,15 +47,25 @@
 
 
 </p>
+
 <p><strong>4. Encryption key for the secure transmission of IMC password</strong>. It should match the one in ImproveMyCity joomla component. The default value is
 EncKey = "1234567890123456";</p>
-<p><strong>5. Geographical limits</strong> (rectangle) from where issues can be sent (North, South, East, West). Default values are set to cover the entire globe, i.e. AppGPSLimits =   {90, -90, 180, -180};</p>
-<p><strong>6. (Optional) Usage analytics</strong> key for Flurry analytics that monitors usage of application see www.flurry.com.
+
+<p><strong>5. (Optional) Usage analytics</strong> key for Flurry analytics that monitors usage of application see www.flurry.com.
 Flurry_Key = "your_key_goes_here”;</p>
 
-<p>In <strong>res/values/strings.xml</strong></p>
+<p>In <strong>raw/polygoncoords.txt</strong></p>
 
-<p><strong>7. Google map api key.</strong> You should have two map api keys: 1) for debugging related to your android debug key; 2) for release version related to your android release key. See in android developer about how to generate map api keys according to your android key. Currently, only Google Maps Android API v1 is supported.</p>
+<p><strong>6. Geographical limits</strong> (polygon) from where issues can be sent are defined as pairs of Longitude,Latitude. Longitude is separated with comma from Latitude. Points are separated with white space, e.g.  23.1094,40.5789 23.1111,40.5781 23.1126,40.5774 23.1094,40.5789                
+     
+The polygon should be closed, i.e. first point should match last point. Latitude and Longitude can be obtained by from GoogleMaps by right-clicking on the desired points and selecting “What is here”. A better way is to generate a polygon from Google-Earth app and export it as a kml file (remove the altitude information ",0");</p>
+
+<p>In <strong>AndroidManifest.xml</strong></p>
+
+<p><strong>7. Google map api key.</strong> You should have two map api keys: 1) for debugging related to your android debug key; 2) for release version related to your android release key. See in android developer <a href="https://developers.google.com/maps/documentation/android/">here</a> about how to generate map api keys according to your android debug or release key. Only Google Maps Android API v2 is supported.
+
+After obtaining the Google map api key it should be placed as shown below:
+<![CDATA[<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="XXXXXXXXXXXXXXXXXXXXXXXXXXX"]]/>>.</p>
 
 <p>After obtaining the Google map api key it should be placed as shown below:<br />&lt;string name="google_map_api_key" translatable="false"&gt;your_key_here&lt;/string&gt;</p>
 
