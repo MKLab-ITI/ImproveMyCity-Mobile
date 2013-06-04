@@ -30,8 +30,14 @@
       <section>
       <h1>FAQ</h1>
       <h2>Q1. How to compile with google maps v2?</h2>
-      <p>In order to compile the app you need to follow these steps in the explicit order: A) install the "Google Play Services" plug-in via Android SDK Manager; B) import the "google-play-services_lib" library project into your workspace and C) Import the IMC mobile project into your workspace. In detail, in Eclipse select "Window" > "Android SDK Manager". Scroll to the bottom of the package list and select "Extras" > "Google Play services". The Google Play services SDK is downloaded to your computer and installed in your Android SDK environment at <android-sdk-folder>/extras/google/google_play_services/. In order to import "google-play-services_lib" project into your workspace in eclipse: Click "File" -> "Import", select "Android" -> "Existing Android Code into Workspace" (make sure that you have selected the option copy the files into workspace). Then download IMC-mobile zip file and import it to your workspace (also make sure the option to copy files into workspace is clicked). Then link IMC project to the google-play-services_lib by "Project">"Properties">"Android">"Library">"ADD">Browse to and select <android-sdk-folder>/extras/google/google_play_services/libproject/google-play-services_lib. Then you are ready to compile.
+      <p>In order to compile the app you need to follow these steps in the explicit order: A) install the "Google Play Services" plug-in via Android SDK Manager; B) import the "google-play-services_lib" library project into your workspace and C) Import the IMC mobile project into your workspace. In detail: 
       
+      <ul>
+      <li>in Eclipse select "Window" > "Android SDK Manager". Scroll to the bottom of the package list and select "Extras" > "Google Play services". The Google Play services SDK is downloaded to your computer and installed in your Android SDK environment at <android-sdk-folder>/extras/google/google_play_services/.</li>
+      <li>import "google-play-services_lib" project into your workspace in eclipse: Click "File" -> "Import", select "Android" -> "Existing Android Code into Workspace" (make sure that you have selected the option copy the files into workspace);</li>
+      <li>download IMC-mobile zip file and import it to your workspace (also make sure the option to copy files into workspace is clicked). Then link IMC project to the google-play-services_lib by "Project">"Properties">"Android">"Library">"ADD">Browse to and select <android-sdk-folder>/extras/google/google_play_services/libproject/google-play-services_lib.
+      </li>Then you are ready to compile.
+      </ul>
       
       Details can be found in Google Maps API v2 documentation pages <a href="https://developers.google.com/maps/documentation/android/">here</a></p>
            
