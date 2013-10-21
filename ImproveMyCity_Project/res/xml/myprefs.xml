@@ -19,7 +19,7 @@
         android:layout="@layout/pref_categories_layout"
         android:title="@string/Language" >
         <ListPreference
-            android:defaultValue="el - Ελληνικά"
+            android:defaultValue="en - English"
             android:entries="@array/Language"
             android:entryValues="@array/Language"
             android:key="LanguageAR"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.mk4droid.IMCity_PackDemo"
-      android:versionCode="70"
-      android:versionName="2.76" android:installLocation="auto">
+      android:versionCode="71"
+      android:versionName="2.77" android:installLocation="auto">
     <uses-sdk android:minSdkVersion="10"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -33,7 +33,7 @@
              
         
         <meta-data android:name="com.google.android.maps.v2.API_KEY"
-                   android:value="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
+                   android:value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
               
         
         <activity android:name="com.mk4droid.IMC_Activities.Activity_Thinking"

@@ -40,7 +40,7 @@ public class Constants_API {
 	public static String phpExec        = "/";
 	
 	/** Server path of issue images */ 
-	public static String remoteImages      = "/";
+	public static String remoteImages   = "/";
 
 	/** Encryption key for transmitting password (16 digits). It should be the same as in your ImproveMyCity joomla component. 
 	 * The default value is 1234567890123456 (choose this as a quick start to connect with your server).
