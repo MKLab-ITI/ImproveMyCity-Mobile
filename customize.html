@@ -29,7 +29,7 @@
       </header>
       <section>
       <h1>Customize</h1>
-      <p>ImproveMyCity-Mobile is written with Eclipse using the <a href="http://developer.android.com/tools/sdk/eclipse-adt.html">android developer tool (ADT)</a> and <a href="http://developer.android.com/sdk/index.html">Android SDK</a> with Android 2.2 – API 8. In order to compile the app you need to follow these steps in the correct order a) install the "Google Play Services" plug-in via Android SDK Manager; b) import the "google-play-services_lib" library project into your workspace; and c) Import the IMC mobile project into your workspace. Then link IMC project to the google-play-services_lib by "Project">"Properties">"Android">"Library">"ADD".See <a href="faq">FAQ</a> for instructions on how to do it.
+      <p>ImproveMyCity-Mobile is written with Eclipse using the <a href="http://developer.android.com/tools/sdk/eclipse-adt.html">android developer tool (ADT)</a> and <a href="http://developer.android.com/sdk/index.html">Android SDK</a> with Android 2.3.3 – API 10. In order to compile the app you need to follow these steps in the correct order a) install the "Google Play Services" plug-in via Android SDK Manager; b) import the "google-play-services_lib" library project into your workspace; and c) Import the IMC mobile project into your workspace. Then link IMC project to the google-play-services_lib by "Project">"Properties">"Android">"Library">"ADD".See <a href="faq">FAQ</a> for instructions on how to do it.
       
       The mobile application is developed to communicate with the back-end Joomla component of ImproveMyCity web application. So in order to achieve the full functionality of the mobile app you need also to follow the instructions for <a href="https://github.com/icos-urenio/Improve-my-city/wiki">installing ImproveMyCity</a>.</p>
       <h2>Client side</h2>
@@ -56,7 +56,7 @@ Flurry_Key = "your_key_goes_here”;</p>
 
 <p>In <strong>raw/polygoncoords.txt</strong></p>
 
-<p><strong>6. Geographical limits</strong> (polygon) from where issues can be sent are defined as pairs of Longitude,Latitude. Longitude is separated with comma from Latitude. Points are separated with white space, e.g. "23.1094,40.5789 23.1111,40.5781 23.1126,40.5774 23.1094,40.5789". The polygon should be closed, i.e. first point should match last point. Latitude and Longitude can be obtained by from GoogleMaps by right-clicking on the desired points and selecting “What is here”. A better way is to generate a polygon from Google-Earth app and export it as a kml file (remove the altitude information ",0");</p>
+<p><strong>6. Geographical limits</strong> (polygon) from where issues can be sent are defined as from a sequence of Longitude-Latitude coordinates. Coordinates are separated with white space, e.g. "23.1094 40.5789 23.1111 40.5781 23.1126 40.5774 23.1094 40.5789". A point is defined from two coordinates. The polygon consists of all points. The polygon should be closed, i.e. first point should match last point. Latitude and Longitude can be obtained by from GoogleMaps by right-clicking on the desired points and selecting “What is here”. A better way is to generate a polygon from Google-Earth app and export it as a kml file (remove the altitude information ",0");</p>
 
 <p>In <strong>AndroidManifest.xml</strong></p>
 
@@ -74,12 +74,12 @@ Flurry_Key = "your_key_goes_here”;</p>
   (line 27). Define the Menu language by setting the android:defaultValue parameter, e.g. android:defaultValue="en - English".  Default is English ("en - English"). Greek is also supported ("el - Ελληνικά"). See <a href="language">how to add a new language</a> if you want to add a language that is not currently supported.</p>
 
 <p>2. IMC_Store/Constants_API.java<br />
-  change the variable
-public static String DefaultLanguage = "en - English";
-perform the same changes as in 1.</p>
+change the variable<br/>
+&nbsp;&nbsp;public static String DefaultLanguage = "en - English"; <br/>
+with values as in step 1.</p>
 </div>
 
-<p><strong>9. Usage analytics</strong>  by using Flurry library is by default “false”. It can be modified in line 58, e.g. android:defaultValue="true"</p>
+<p><strong>9. Usage analytics</strong>  by using Flurry library is by default “true”. It can be modified in line 58, e.g. android:defaultValue="false"</p>
 
 <p>Compile the application and you are done!</p>
 
