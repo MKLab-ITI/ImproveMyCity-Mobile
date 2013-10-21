@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- icon name -->
+    <string name="app_name">IMCity</string>
+    
+    
+    <string name="CERTH">CERTH - ITI</string>
+    <string name="webver">https://smartcitydemos.urenio.org</string>
+    
+    <!--          Splash Register  -->
+    <string name="splash_title">Improve My City</string>
+    <string name="instance">Demo</string>
+
+    
+    <string name="Login">Login</string>
+    <string name="skipLogin">Guest</string>
+    <string name="Registration">Registration</string>
+    <string name="Signup">Sign up</string>
+
+    <string name="tryagain">Wrong username or password. Try again.</string>
+    <string name="Yourfullname">Your full name</string>
+    <string name="Createanaccount">Only your full name can be written with Greek letters.</string>
+    <string name="Giveausername">Give a username!</string>
+    <string name="Givealsoyourname">Give also your name!</string>
+    <string name="NotValidEmail">Not valid e-mail</string>
+    <string name="PasswordShorter">Password should be less than 16 characters</string>
+    
+    <string name="Sending">I am sending your data. Please wait.</string>
+    
+    <string name="Notification">Notification</string>
+    <string name="Finish">Finish</string>
+    <string name="email">e-mail</string>
+    
+    
+    <!--         SERVICES         -->
+    <string name="Downloading">Downloading</string>
+    <string name="Downloaded">Downloaded</string>
+    <string name="NewIssues">New issues</string>
+    <string name="NewLocation">Issues around new location</string>
+    <string name="NewDistance">Issues within new range</string>
+    <string name="NewFilters">Issues filtered</string>
+    
+    <!-- Main -->
+    <string name="ReportAnIssue">Report an issue</string>
+    <string name="NormalMap">Normal</string>
+    <string name="Satellite">Satellite</string>
+    <string name="OnProgress">On Progress</string>
+    <string name="RefreshOK">Refresh OK</string>
+    <string name="OpenIssue">Open</string>
+    <string name="AckIssue">Acknowledged</string>
+    <string name="ClosedIssue">Closed</string>
+    <string name="Votes">Votes</string>
+    
+    <string name="days">days</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="ago">ago</string>
+    <string name="Report">New Issue</string>
+    <string name="Filter">Filters</string>
+    <string name="Settings">Settings</string>
+    <string name="List">List</string>
+    <string name="Map">Map</string>
+    <string name="MyIssuesHint">My issues (only if signed in)</string>
+    <string name="balloondesc">Click on text balloon for more details</string>
+    
+    
+    
+    
+    <!-- List -->
+    <string name="AllIssues">All Issues</string>
+    <string name="MyIssues">My Issues</string>
+    
+    <!--     View Issue -->
+	<string name="Submitted">Submitted</string>
+	<string name="by">by</string>
+	<string name="Viewed">Viewed</string>
+	<string name="Status">Status</string>
+	<string name="AddComment">Leave a Comment</string>
+	<string name="Vote">Vote</string>
+	<string name="peoplevoted">people voted</string>
+	<string name="Comment">Comment</string>
+	<string name="ViewComments">View Comments</string>
+	<string name="LatestComments">LatestComments</string>
+	<string name="CommentCreat">Comment created</string>
+	<string name="AgoBy">ago by</string>
+	<string name="AlreadyVoted">Already voted</string>
+	<string name="OnlyRegistered">Only registered users can comment or vote.</string>
+	<string name="PressLogin">Press to login.</string>
+    
+		<!--   Comments  -->
+	<string name="now">now</string>
+	<string name="noComments">No Comments</string>
+    
+	
+   <!-- Report new Issue A-->
+   
+   <string name="Logintoadd">Log in to add new issue</string>
+   <string name="IMCAllow">Improve My City allows citizens to report issues related to their neighborhood.</string>
+   <string name="ToAdd">To add a new issue you must have an account.</string>
+   
+   <!-- 
+	<string name="GoSetup">Only registered users can report a new issue. Please register using the Setup tab.</string>
+	 -->
+	<string name="Photo">Photo</string>
+	<string name="Details">Details</string>
+	<string name="SelectaCategory">Select a Category</string>
+	<string name="STitle">Short Title</string>
+	<string name="Category">Category</string>
+	<string name="Categories">Categories</string>
+	<string name="Address">Address</string>
+	<string name="Shoot">Shoot</string>
+	<string name="Attach">Attach Image</string>
+	<string name="Attachanimage">Attach an image</string>
+	<string name="Description">Description</string>
+	<string name="LongerTitle">Title should be more than 3 letters.</string>
+	<string name="LongerDescription">Description should be more than 3 letters</string>
+	<string name="Gallery">Gallery</string>
+	<string name="Camera">Camera</string>
+	<string name="Clear">Clear</string>
+	<string name="Next">Next</string>
+
+			
+	<!--  New Issue B -->
+	<string name="back">back</string>
+	<string name="Dragpointer">Drag pointer to your preferred location</string>
+	<string name="IssueReported">Issue reported</string>
+	<string name="ReportNew">Reporting new issue</string>
+	<string name="WriteAddress">Write address</string>
+	<string name="Issueoutofmunicipalitylimits">Issue out of municipality limits</string>
+	<string name="ReportIss">Report issue</string>
+	<string name="Reported">Your issue has been reported!</string>
+		
+	<string name="Issueposition">Issue position</string>
+	<string name="Dragndrop">Drag \'n drop</string>
+	
+	
+	
+	  <!-- Filters  -->
+    <string name="State">State</string>
+    <string name="SelAll">Select all</string>
+    <string name="All">All</string>
+    <string name="Reverse">Reverse all</string>
+    <string name="Issues">Issues</string>
+	
+	
+	
+		
+
+	
+	
+    
+    <!-- Setup -->
+    <string name="Return">Return</string>
+    <string name="CustAccount">User account</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="LatinChars">Latin characters</string>
+    <string name="GreekChars">Greek letters allowed</string>
+    <string name="AccountOperations">Account operations</string>
+    <string name="LoginRegisterRemind">Login/Register/Remind</string>
+    
+    <string name="Remind">Remind</string>
+    
+    
+    
+    
+    <string name="Language">Language</string>
+    <string name="LangSel">Language selection</string>
+    <string name="IdonothaveA">I do not have an account</string>
+    <string name="Iforgot">I forgot my password</string>
+    <string name="Location">Location</string>
+    <string name="ViewRange">Viewing range</string>
+    <string name="ViewRadius">from current position.</string>
+    <string name="IssuesNo">Number of issues to download</string>
+    <string name="IssuesMaxNo">Max number of recent issues to download</string>
+    <string name="RemindTitle">Send a reminder to:</string>
+    <string name="RemindHint">Write your e-mail here</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="System">System</string>
+    <string name="Refrinter">Refresh rate interval</string>
+    <string name="Restartneed">Restart is needed</string>
+    <string name="Contact">Contact</string>
+    <string name="Information">Information</string>
+    <string name="Version">Software version</string>
+    <string name="Authors">Authors</string>    
+    
+    <string name="Yourproposal">Send us your proposal</string>
+    <string name="Sendemailwithyourideas">Send your idea</string>
+    
+    <string name="Reset">Reset and restart application</string>
+    <string name="Deleteallissuedatastoredlocallytoyourphone">Delete all issue data stored locally to your phone</string>
+    
+    <string name="Areyousure">Are you sure</string>
+    <string name="Deleted">Deleted</string>
+    
+    
+    <!--  About  -->    
+    <string name="WhatIsItTitle">Description</string>
+    <string name="ApplicationData">Application data</string>
+    <string name="FeaturesTitle">Features</string>
+    <string name="RequirementsTitle">Device requirements</string>
+    
+
+
+    
+    <string name="WhatIsIt">
+        Improve My City Mobile empowers users to improve their city in collaboration with local administration.
+        The application allows citizens to report all types of issues related to their neighborhood such as, 
+        broken lamps, abandoned cars, trashcan absence, etc. The reported issues are immediately transferred to 
+        the appropriate municipality department in order to get fixed.
+    </string>
+    <string name="municipalityInfo">
+        This app has been customized for the needs of the municipality of Thermi - Thessaloniki and is fully 
+        interconnected with the corresponding web-based application:</string>
+        
+    <string name="bordersInfo">The municipality borders were constructed using the geodesic data from the site 
+        \"Public-Open data\" (http://www.geodata.gov.gr/) provided by the 
+        \"Institute for the Management of Information Systems Research Center - Athena\" (http://www.imis.athena-innovation.gr/) and the 
+        \"National Centre for Public Administration and Local Government\" (http://www.opengov.gr)</string>
+    
+    <string name="OpinionReport">
+        Report your opinion by e-mail at improvemycitymobile@gmail.com
+    </string>
+    
+    <string name="ContactInfoTitle">Improve My City for your municipality</string>
+    <string name="ContactInfo">Visit the cite of Improve My City if you wish to adapt the application to your needs: http://mklab.iti.gr/imc/</string>
+    
+    <string name="CERTHlink">http://mklab.iti.gr/</string>
+    
+    <string name="URENIO">URENIO</string>  
+    <string name="URENIOlink">http://www.urenio.org</string>
+    
+    
+     <string name="LogOut">Log out</string>
+     <string name="LoggedOut">Logged out</string>
+     <string name="SendMail">Send e-mail</string>
+     <string name="About">About</string>
+     
+    <string name="Usage">Application usage data</string>
+	<string name="Analytics">Share analytics</string>
+	
+	
+     
+    
+    <!-- Register -->
+    <string name="Register">Register</string>
+    <string name="FirstSecondName">First and Second name*</string>
+    <string name="ValidEmail">Valid e-mail address</string>
+    <string name="MoreThan6Chars">More than 6 characters</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Submit">Submit</string>
+
+	<!-- Messages -->
+	<string name="Welcome">Welcome</string>
+	<string name="NoInternet">No Internet</string>
+	<string name="Updating">Updating</string>
+	<string name="Uploading">Uploading</string>
+	
+	<string name="IncorUser">Username or password are incorrect. Registered?</string>
+	<string name="DownloadingFirst">Downloading for the first time, please wait 5 seconds.</string>
+	<string name="NoGPSnoWiFi">No GPS, No Wi-Fi location tracking</string>
+	<string name="Icannotfindyourpos">I can not find your position!</string>
+	
+    <string name="SyncData">Synchronizing Data</string>
+    <string name="Refresh">Refresh</string>
+    <string name="DistanceView">Issues inside new range</string>
+    <string name="IssuesNoCh">Latest issues list</string>
+    
+    <string name="NewIssueCh">Refreshing data to get the new issue</string>
+    <string name="LocationCh">Issues around your new location</string>
+    
+    <string name="PressBackFirst">Press back first</string>
+    
+    <string name="FailMes">Failed due to an error. Τry again later.</string>
+    
+    
+    
+    <!-- Arrays -->
+    <string-array name="Language">
+        <item>el - Ελληνικά</item>
+        <item>en - English</item>
+    </string-array>
+    
+    <string-array name="refrateoptions">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>60</item>
+    </string-array>
+    
+    <string-array name="refrateoptions_entries">
+        <item>1 minute</item>
+        <item>5 minutes (recommended)</item>
+        <item>10 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    
+
+
+    <string-array name="maxno_issues">
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    
+    <string-array name="maxno_issues_entries">
+        <item>20 issues</item>
+        <item>40 issues (recommended)</item>
+        <item>80 issues</item>
+        <item>200 issues</item>
+        <item>400 issues</item>
+    </string-array>
+</resources>

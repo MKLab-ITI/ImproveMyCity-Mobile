@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:background="#00000000" >
+
+        <TextView
+            android:id="@+id/tv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/bg_repeater"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:shadowColor="@color/holo"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:text="@string/Reported"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#888" />
+
+        <ImageView
+            android:id="@+id/imv_logo_success"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_round_red"
+            android:padding="8dp"
+            android:src="@drawable/imc_logo_plain" />
+
+        <Button
+            android:id="@+id/bt_close_issrep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/tv_success"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:text="x"
+            android:textColor="#fff"
+            android:textScaleX="1.5"
+            android:textSize="10pt" />
+    </RelativeLayout>
+
+</LinearLayout>

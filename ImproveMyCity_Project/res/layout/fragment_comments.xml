@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCommentsFull"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_repeat"
+    android:orientation="vertical" >
+
+    <!-- ISSUE    TITLE -->
+
+    <LinearLayout
+        android:id="@+id/ll_Comments_GrandTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diag_gray_repeater" >
+
+        <TextView
+            android:id="@+id/tv_Comments_GrandTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:shadowColor="#96dada"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:text="Large Text "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vCommshadow"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/ll_Comments_GrandTitle"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gradient_black" />
+
+    <View
+        android:id="@+id/vCommsupsepar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_Comments_GrandTitle"
+        android:layout_marginBottom="1px"
+        android:background="#000" />
+
+    <!-- =============== COMMENTATION ====================== -->
+
+    <LinearLayout
+        android:id="@+id/llcommentation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/diag_gray_repeater"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <!-- 
+        <TextView
+            android:id="@+id/tvNotifyRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/OnlyRegistered"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/mytextsecondarycolor"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btNotifyRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Login"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+ 			-->
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:hint="@string/Comment"
+            android:inputType="textMultiLine"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btAddComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:drawableTop="@drawable/ic_send_holo_light"
+            android:drawablePadding="-40dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vCommshadow"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/llcommentation"
+        android:layout_marginBottom="1px"
+        android:background="@drawable/gradient_black" />
+
+    <!-- =======   RECENT   COMMENTS ============ -->
+    <ScrollView
+        android:id="@+id/svIssueDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llcommentation"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ll_Comments_GrandTitle"
+        android:orientation="vertical"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:id="@+id/llcommentsholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvnoComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/noComments"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000"
+                android:visibility="gone" />
+
+            <ProgressBar
+                    android:id="@+id/pbar_comments_down"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            
+            <TableLayout
+                android:id="@+id/tlComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
