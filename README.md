@@ -22,3 +22,7 @@ ImproveMyCity-Mobile source code is licensed under the [GNU Affero General Publi
 #### Version 2.77
 Improved speed, stability, graphics against previous release (v2.03)
 
+## Donate
+Help us make Improve My City better.
+
+[![Donate](http://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](http://www.improve-my-city.com/#downloadSupport)
