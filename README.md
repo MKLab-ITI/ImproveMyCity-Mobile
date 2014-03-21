@@ -29,4 +29,5 @@ Help us make **Improve My City** better.
 
 [![Donate](http://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](http://www.improve-my-city.com/#downloadSupport)
 
+## Reference Notice
 If you are using the ImproveMyCity platform for your project please include the statement "Powered by improve-my-city.com" in a prominent place.
