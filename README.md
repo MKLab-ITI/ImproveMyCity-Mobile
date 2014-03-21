@@ -7,6 +7,8 @@ ImproveMyCity-Mobile is the Android counterpart of the [IMC Joomla component](ht
 The application enables citizens to report local problems such as potholes, illegal trash dumping, faulty street lights, broken tiles on sidewalks, and illegal advertising boards. The submitted issues are displayed on the city's map. Users may add photos and comments. Moreover, they can suggest solutions for improving the environment of their neighbourhood. The mobile application fully resembles the functionality of the web version, adding some additional features. [Learn more...](http://www.improve-my-city.com)
 
 
+If you are using the ImproveMyCity platform for your project please include the statement "Powered by improve-my-city.com" in a prominent place.
+
 ### Installation and Documentation
 Refer to ImproveMyCity-Mobile [github pages](http://mklab-iti.github.io/ImproveMyCity-Mobile/).
 
@@ -26,3 +28,5 @@ Improved speed, stability, graphics against previous release (v2.03)
 Help us make **Improve My City** better.
 
 [![Donate](http://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](http://www.improve-my-city.com/#downloadSupport)
+
+If you are using the ImproveMyCity platform for your project please include the statement "Powered by improve-my-city.com" in a prominent place.
