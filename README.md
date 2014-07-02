@@ -1,6 +1,6 @@
 # ImproveMyCity Mobile :: Android version
 
-![Screenshots from the application](http://mklab.iti.gr/imc/img/intro.png)
+![Screenshots from the application](http://www.improve-my-city/images/AndroidIMCPhone.png')
 
 ImproveMyCity-Mobile is the Android counterpart of the [IMC Joomla component](http://extensions.joomla.org/extensions/clients-a-communities/communities/21164) to report, vote and track non-emergency issues. 
 
