@@ -1,6 +1,4 @@
 ImproveMyCity-Mobile
 ====================
 
-The Android mobile version of the web-based ImproveMyCity application
-
-These pages correspong to ImproveMyCity Mobile v2.76
+These is the documentation of the ImproveMyCity Android mobile version 2.8.1
