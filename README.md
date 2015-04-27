@@ -1,5 +1,5 @@
 # ImproveMyCity Mobile :: Android version
-New: We changed the IDE from Eclipse to Android Studio starting from IMC v2.8.1i
+New: We changed the IDE from Eclipse to Android Studio starting from IMC v2.8.1
 
 ![Screenshots from the application](http://www.improve-my-city.com/demo/templates/improvemycity/images/AndroidIMCPhone.png)
 
