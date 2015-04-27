@@ -154,7 +154,7 @@ public class Fragment_Issue_Details extends Fragment {
 		IssuePic issuepic = dbHandler.getIssuePic(mIssue._id);
 
 		if (issuepic._IssuePicData!=null){
-			bmI = My_System_Utils.LowMemBitmapDecoder(issuepic._IssuePicData);
+			bmI = My_System_Utils.LowMemBitmapDecoder(issuepic._IssuePicData, ctx);
 		} else {
 			//------- Try to download from internet --------------  
 			if (InternetConnCheck.getInstance(ctx).isOnline(ctx) && !mIssue._urlphoto.equals("null") && !mIssue._urlphoto.equals("") && 
@@ -214,7 +214,7 @@ public class Fragment_Issue_Details extends Fragment {
 		tvCateg.setText(Service_Data.mCategL.get(iCateg)._name);
 
 		try {
-			bmCateg  = My_System_Utils.LowMemBitmapDecoder(Service_Data.mCategL.get(iCateg)._icon);
+			bmCateg  = My_System_Utils.LowMemBitmapDecoder(Service_Data.mCategL.get(iCateg)._icon, ctx);
 			BitmapDrawable drCateg = new BitmapDrawable(bmCateg);
 
 			tvCateg.setCompoundDrawablesWithIntrinsicBounds(drCateg, null, null, null);
@@ -583,7 +583,7 @@ public class Fragment_Issue_Details extends Fragment {
 
 		@Override
 		protected void onPostExecute(byte[] bmBytes) {
-			bmI = My_System_Utils.LowMemBitmapDecoder(bmBytes);
+			bmI = My_System_Utils.LowMemBitmapDecoder(bmBytes, ctx);
 
 			if (bmI!=null){
 				imvFull.setImageBitmap(bmI);  

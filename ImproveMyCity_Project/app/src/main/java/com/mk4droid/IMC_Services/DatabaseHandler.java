@@ -19,6 +19,7 @@ import com.mk4droid.IMC_Constructors.Issue;
 import com.mk4droid.IMC_Constructors.IssuePic;
 import com.mk4droid.IMC_Constructors.VersionDB;
 import com.mk4droid.IMC_Store.Constants_API;
+import com.mk4droid.IMCity_PackDemo.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -542,18 +543,23 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 					// Download icon
 				    byte[] CategIcon = Download_Data.Down_Image(fullPath );
+                    Bitmap CategIconBM = null;
 
-				    //------- Resize icon based on the device needs and store in db. --------------------
-				    Bitmap CategIconBM = BitmapFactory.decodeByteArray(CategIcon, 0, CategIcon.length);
-				    CategIconBM = Bitmap.createScaledBitmap(CategIconBM, (int) ((float)Fragment_Map.metrics.densityDpi/4.5),
-                                                               (int) ((float)Fragment_Map.metrics.densityDpi/4), true);
+                    if (CategIcon!=null) {
 
-				    ByteArrayOutputStream stream = new ByteArrayOutputStream();
-				    CategIconBM.compress(Bitmap.CompressFormat.PNG, 100, stream);
-				    CategIcon = stream.toByteArray();
-				    //---------------------------------------------------------
+                        //------- Resize icon based on the device needs and store in db. --------------------
+                        CategIconBM = BitmapFactory.decodeByteArray(CategIcon, 0, CategIcon.length);
+                        CategIconBM = Bitmap.createScaledBitmap(CategIconBM, (int) ((float) Fragment_Map.metrics.densityDpi / 4.5),
+                                (int) ((float) Fragment_Map.metrics.densityDpi / 4), true);
+                        //---------------------------------------------------------
+                        bdown += CategIcon.length;
+                    } else {
+                        CategIconBM = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.map_categ_default_icon);
+                    }
 
-				    bdown += CategIcon.length;
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    CategIconBM.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                    CategIcon = stream.toByteArray();
 				    
 					// Local db
 					Cursor cursorC = db.rawQuery( "SELECT "+ KEY_CatID + 

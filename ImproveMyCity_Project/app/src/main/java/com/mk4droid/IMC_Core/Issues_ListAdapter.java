@@ -44,7 +44,7 @@ import java.util.ArrayList;
  */
 public class Issues_ListAdapter extends ArrayAdapter<IssueListItem> {
 
-	Context ctx; 
+	static Context ctx;
 	int layoutResourceId;    
 	ArrayList<IssueListItem> data;
 	Bitmap bm_noimage; 
@@ -260,7 +260,7 @@ public class Issues_ListAdapter extends ArrayAdapter<IssueListItem> {
 				Log.d(Constants_API.TAG, "IssListAdapt " + mIssueTPhotoSTR );
 
 				if (bmBytesFull2 != null){
-					Bitmap bmFull = My_System_Utils.LowMemBitmapDecoder(bmBytesFull2);
+					Bitmap bmFull = My_System_Utils.LowMemBitmapDecoder(bmBytesFull2, ctx);
 
 					// THUMBNAIL
 					bmThumb= Bitmap.createScaledBitmap(bmFull, 120, 120, false);
@@ -277,7 +277,7 @@ public class Issues_ListAdapter extends ArrayAdapter<IssueListItem> {
 			} else { // Exists in DB: GET FROM LOCAL DB
 					
 					bmBytesThumb = mIssueThumb._IssuePicData;
-					bmThumb = My_System_Utils.LowMemBitmapDecoder( bmBytesThumb );
+					bmThumb = My_System_Utils.LowMemBitmapDecoder( bmBytesThumb, ctx );
 					bmArr[mPosition] = bmThumb; 
 			}
 

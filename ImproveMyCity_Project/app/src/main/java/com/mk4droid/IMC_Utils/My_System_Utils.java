@@ -10,6 +10,7 @@ import android.graphics.BitmapFactory;
 import android.util.Log;
 
 import com.mk4droid.IMC_Store.Constants_API;
+import com.mk4droid.IMCity_PackDemo.R;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,7 +38,7 @@ public class My_System_Utils {
 	 * @param bt image as bytes
 	 * @return image as bitmap
 	 */
-	public static Bitmap LowMemBitmapDecoder(byte[] bt){
+	public static Bitmap LowMemBitmapDecoder(byte[] bt, Context ctx){
 		Bitmap bm = null;
 		
 		BitmapFactory.Options options = new BitmapFactory.Options();
@@ -45,7 +46,11 @@ public class My_System_Utils {
 		options.inPurgeable = true;
 		options.inInputShareable = true;
 		options.inJustDecodeBounds = false;
-		bm = BitmapFactory.decodeByteArray(bt, 0, bt.length, options);
+
+        if (bt!=null)
+            bm = BitmapFactory.decodeByteArray(bt, 0, bt.length, options);
+        else
+            bm = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.map_categ_default_icon);
 		
 		return bm;
 	}
