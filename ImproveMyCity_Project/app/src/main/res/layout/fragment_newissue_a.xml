@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:id="@+id/llnewissue_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_repeater"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llUnauth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:layout_margin="20dp" >
+
+            <LinearLayout 
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal"
+            	android:layout_marginBottom="10dp">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+            	    android:layout_height="wrap_content"
+            	    android:textColor="@color/orange"
+            	    android:text="@string/Logintoadd"
+            	    android:textAppearance="?android:attr/textAppearanceLarge"
+                    />
+                
+                <ImageView 
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+            	    android:layout_height="60dp"
+            	    android:layout_marginTop="5dp"
+            	    android:contentDescription="@string/app_name"
+            	    android:src="@drawable/imc_logo_plain"
+                    />
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IMCAllow"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#555"
+                android:layout_marginBottom="20dp" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ToAdd"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#555" />
+            
+            <Button 
+                android:id="@+id/bt_nia_gosetup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:text="@string/Login"
+                android:textStyle="bold"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bt_custom_click_orange"/>
+            
+            
+        </LinearLayout>
+
+        
+        <!--  Begin the normal dialogue -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:shadowColor="@color/holo"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="0.5"
+                android:text="@string/Photo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imageview_border" >
+
+                <ImageButton
+                    android:id="@+id/btAttach_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_repeater_camera_engraved"
+                    android:src="@drawable/bt_custom_camera_round"
+                    android:onClick="onClick"
+                    android:scaleType="centerInside"
+                    
+                    android:textSize="0pt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:shadowColor="@color/holo"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:text="@string/Details"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000" />
+
+        <Spinner
+            android:id="@+id/spinnerCateg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:prompt="@string/SelectaCategory"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/etTitle_ni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="@string/STitle"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/Description"
+            android:inputType="textMultiLine"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/btProceed_ni_B"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="@drawable/bt_custom_click_orange"
+            android:onClick="onClick"
+            android:padding="15dp"
+            android:text="@string/Next"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

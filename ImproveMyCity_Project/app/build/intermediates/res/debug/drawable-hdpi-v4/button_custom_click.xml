@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+    <item android:drawable="@drawable/shape_blue"  android:state_pressed="true"/>
+    <item android:drawable="@drawable/shape_blue"  android:state_selected="true"/>
+    <item android:drawable="@drawable/shape_bez"        android:state_active="true"/>
+    <item android:drawable="@drawable/shape_bez"        android:state_enabled="true"/>
+        
+    
+    
+
+</selector><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/drawable-hdpi/button_custom_click.xml -->

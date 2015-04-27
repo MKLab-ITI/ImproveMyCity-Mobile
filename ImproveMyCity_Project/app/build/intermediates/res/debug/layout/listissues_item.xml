@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/llitem_front"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <!-- 1 IMAGE and Text -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9" >
+
+            <LinearLayout
+                android:id="@+id/llimage"
+                android:layout_width="70dp"
+                android:layout_height="70dp" >
+
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/imageview_border"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_no_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lltitle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_margin="3dp"
+                android:layout_weight="0.76"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:shadowColor="#ccc"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="My issue title goes here beware if"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:shadowColor="#ccc"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="Address 2 Lines 10 go here and if is very long then split into two lines and ellipsize"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/mytextsecondarycolor" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_right_arr" />
+        </TableRow>
+
+        <!-- Details row -->
+
+        <TableRow
+            android:id="@+id/trMinor"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+           android:layout_weight="0.10" 
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp">
+
+
+            <!-- id - Status -Votes - Date -->
+            <TextView
+                android:id="@+id/txtIssNo"
+                android:layout_width="68dp"
+                android:layout_height="fill_parent"
+                android:drawableLeft="@drawable/id_icon"
+                android:layout_gravity="center"
+                android:gravity="left|center_vertical"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/mytextsecondarycolor" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/txtReported"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                
+                android:layout_weight="0.4"
+                android:drawableLeft="@drawable/clock_icon"
+                android:drawablePadding="2dp"
+                android:maxLines="1"
+                android:gravity="left|center_vertical"
+                android:shadowColor="#fff"
+                android:text="400 ημέρες"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/mytextsecondarycolor" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/txtVotes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.25"
+                android:drawableLeft="@drawable/vote_icon"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:shadowColor="#fff"
+                android:text="400"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/mytextsecondarycolor" />
+
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.35"
+                android:background="@color/graylight"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/OpenIssue"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#216f0c" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/layout/listissues_item.xml -->

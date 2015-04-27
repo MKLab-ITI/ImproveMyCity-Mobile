@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_IssuesList_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llIssues"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_listissues_MyIssues"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/diag_gray_repeater"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <Button
+                android:id="@+id/bt_listissues_AllIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/all_issues_icon_gray32"
+                android:drawablePadding="10dp"
+                android:text="@string/AllIssues"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/bt_listissues_MyIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/my_issues_icon_gray32"
+                android:drawablePadding="10dp"
+                android:text="@string/MyIssues"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvIssues"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_repeater"
+            android:cacheColorHint="#00000000"
+            android:divider="#444"
+            android:dividerHeight="1px" >
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/layout/fragment_list.xml -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:endColor ="#fe8f6e"
+        android:startColor   ="#fb3b03"
+        android:type="linear"
+        android:angle="90"/>
+
+
+        
+
+            
+        
+    
+    
+</shape>
+
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/drawable-hdpi/gradient_orange.xml -->

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values-el/strings.xml -->
+    <eat-comment/>
+    <string-array name="Language">
+        <item>el - Ελληνικά</item>
+        <item>en - English</item>
+    </string-array>
+    <string-array name="maxno_issues">
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="maxno_issues_entries">
+        <item>20 αιτήματα</item>
+        <item>40 αιτήματα (προτείνεται)</item>
+        <item>80 αιτήματα</item>
+        <item>200 αιτήματα</item>
+        <item>400 αιτήματα</item>
+    </string-array>
+    <string-array name="refrateoptions">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="refrateoptions_entries">
+        <item>1 λεπτό</item>
+        <item>5 λεπτά (προτείνεται)</item>
+        <item>10 λεπτά</item>
+        <item>1 ώρα</item>
+    </string-array>
+    <string name="About">Σχετικά</string>
+    <string name="AccountOperations">Διαχείριση λογαριασμού</string>
+    <string name="AckIssue">Σε εξέλιξη</string>
+    <string name="AddComment">Σχολίασε</string>
+    <string name="Address">Διεύθυνση</string>
+    <string name="AgoBy">από τον/την</string>
+    <string name="All">Όλα</string>
+    <string name="AllIssues">Όλα</string>
+    <string name="AlreadyVoted">Ψηφίσατε ήδη</string>
+    <string name="Analytics">Αποστολή στατιστικών</string>
+    <string name="ApplicationData">Δεδομένα εφαρμογής</string>
+    <string name="Areyousure">Σίγουρα ?</string>
+    <string name="Attach">Εικόνα</string>
+    <string name="Attachanimage">Επισύναψη φωτογραφίας</string>
+    <string name="Authors">Συγγραφείς</string>
+    <string name="CERTH">CERTH - ITI</string>
+    <string name="CERTHlink">http://www.improve-my-city.com/</string>
+    <string name="Camera">Κάμερα</string>
+    <string name="Cancel">Ακύρωση</string>
+    <string name="Categories">Κατηγορίες</string>
+    <string name="Category">Κατηγορία</string>
+    <string name="Clear">Όχι</string>
+    <string name="ClosedIssue">Διεκπεραιώθηκε</string>
+    <string name="Comment">Σχόλιο</string>
+    <string name="CommentCreat">Σχολιάστηκε πριν από</string>
+    <string name="Contact">Επικοινωνία</string>
+    <string name="ContactInfo">
+        Επισκεφτείτε τον διαδικτυακό χώρο του Βελτιώνω την Πόλη μου εαν επιθυμείτε την προσαρμογή της εφαρμογής για τις ανάγκες του Δήμου σας: 
+        http://www.improve-my-city.com/</string>
+    <string name="ContactInfoTitle">Βελτιώνω την Πόλη μου για τον Δήμο σας</string>
+    <string name="Createanaccount">Μόνο το ονοματεπώνυμο μπορεί να έχει Ελληνικούς χαρακτήρες.</string>
+    <string name="CustAccount">Λογαριασμός χρήστη</string>
+    <string name="Deleteallissuedatastoredlocallytoyourphone">Διαγραφή όλων των αιτημάτων που αποθηκεύονται τοπικά στο τηλέφωνο</string>
+    <string name="Deleted">Διαγράφηκαν</string>
+    <string name="Description">Περιγραφή</string>
+    <string name="Details">Λεπτομέρειες</string>
+    <string name="DistanceView">Αιτήματα στο νέο βεληνεκές</string>
+    <string name="Downloaded">Λήψη</string>
+    <string name="Downloading">Λήψη</string>
+    <string name="DownloadingFirst">Λήψη δεδομένων για πρώτη φορά. Περιμένετε 5 δευτερόλεπτα.</string>
+    <string name="Dragndrop">Μετέφερε το δείκτη</string>
+    <string name="Dragpointer">Σύρε τον δείκτη στην επιθυμητή τοποθεσία</string>
+    <string name="FailMes">Κάποιο πρόβλημα προέκυψε. Προσπαθήστε αργότερα.</string>
+    <string name="FeaturesTitle">Δυνατότητες</string>
+    <string name="Filter">Φίλτρο</string>
+    <string name="Finish">Τέλος</string>
+    <string name="FirstSecondName">Όνομα και επίθετο*</string>
+    <string name="ForgotPassword">Ξέχασες τον κωδικό;</string>
+    <string name="Gallery">Συλλογή</string>
+    <string name="Givealsoyourname">Εισάγετε το ονοματεπώνυμο σας.</string>
+    <string name="Giveausername">Εισάγετε ένα όνομα χρήστη.</string>
+    <string name="GreekChars">στα Ελληνικά</string>
+    <string name="IMCAllow">Η εφαρμογή Βελτιώνω Την Πόλη Μου επιτρέπει στους πολίτες να αναφέρουν αιτήματα που
+                             σχετίζονται με τη γειτονιά τους.</string>
+    <string name="Icannotfindyourpos">Δεν μπορώ να εντοπίσω τη θέση σου.</string>
+    <string name="IdonothaveA">Δεν εχω λογαριασμό</string>
+    <string name="Iforgot">Υπενθύμιση κωδικού</string>
+    <string name="IncorUser">Λανθασμένο όνομα χρήστη ή κωδικός. Έχετε εγγραφεί?</string>
+    <string name="Information">Πληροφορίες</string>
+    <string name="IssueReported">Το αίτημά σας καταχωρήθηκε.</string>
+    <string name="Issueoutofmunicipalitylimits">Αίτημα εκτός εμβέλειας δήμου.</string>
+    <string name="Issueposition">Θέση αιτήματος</string>
+    <string name="Issues">Αιτήματα</string>
+    <string name="IssuesMaxNo">Tαυτόχρονη απεικόνιση τελευταίων αιτημάτων.</string>
+    <string name="IssuesNo">Αριθμός Εικονιζόμενων Αιτημάτων</string>
+    <string name="IssuesNoCh">Νέο πλήθος αιτημάτων</string>
+    <string name="LangSel">Επιλογή γλώσσας.</string>
+    <string name="Language">Language</string>
+    <string name="LatestComments">Τελευταία Σχόλια</string>
+    <string name="LatinChars">Λατινικούς χαρακτήρες</string>
+    <string name="List">Λίστα</string>
+    <string name="Location">Τοποθεσία</string>
+    <string name="LocationCh">Αιτήματα στη νέα τοποθεσία</string>
+    <string name="LogOut">Έξοδος</string>
+    <string name="LoggedOut">Αποσυνδεθήκατε</string>
+    <string name="Login">Είσοδος</string>
+    <string name="LoginRegisterRemind">Είσοδος/Εγγραφή/Υπενθύμιση</string>
+    <string name="Logintoadd">Συνδεθείτε για να προσθέσετε νεο αίτημα</string>
+    <string name="LongerDescription">Η περιγραφή πρέπει να αποτελείται τουλάχιστον απο 3 γράμματα.</string>
+    <string name="LongerTitle">Ο τίτλος πρέπει να αποτελείται τουλάχιστον απο 3 γράμματα.</string>
+    <string name="Map">Χάρτης</string>
+    <string name="MoreThan6Chars">Πάνω από 8 χαρακτήρες</string>
+    <string name="MyIssues">Τα δικα μου</string>
+    <string name="MyIssuesHint">Τα αιτήματα μου (πρέπει να γίνει είσοδος πρώτα)</string>
+    <string name="NewDistance">Αιτημάτων στο νεο βεληνεκές</string>
+    <string name="NewFilters">Φιλτραρισμένων αιτημάτων</string>
+    <string name="NewIssueCh">Ανανέωση αιτημάτων για λήψη νέου αιτήματος</string>
+    <string name="NewIssues">Νέων αιτημάτων</string>
+    <string name="NewLocation">Αιτημάτων γύρω από τη νέα τοποθεσία</string>
+    <string name="Next">Επόμενο</string>
+    <string name="NoGPSnoWiFi">Ο εντοπισμός θέσης μέσω GPS ή Wi-Fi είναι κλειστός</string>
+    <string name="NoInternet">Δεν υπάρχει πρόσβαση στο Internet</string>
+    <string name="NormalMap">Χάρτης</string>
+    <string name="NotValidEmail">Άκυρο e-mail</string>
+    <string name="Notification">Ειδοποίηση</string>
+    <string name="OnProgress">Φόρτωση δεδομένων</string>
+    <string name="OnlyRegistered">Εγγραφείτε για να σχολιάσετε ή να ψηφίσετε.</string>
+    <string name="OpenIssue">Υποβλήθηκε</string>
+    <string name="OpinionReport">	
+		Για την αποστολή των παρατηρήσεων σας μπορείτε να στείλετε e-mail στο improvemycitymobile@gmail.com</string>
+    <string name="Password">Κωδικός</string>
+    <string name="PasswordShorter">Ανώτατο όριο κωδικού 16 χαρακτήρες</string>
+    <string name="Photo">Φωτογραφία</string>
+    <string name="PressBackFirst">Πιέστε πρώτα το "back"</string>
+    <string name="PressLogin">Πατήστε για είσοδο.</string>
+    <string name="Refresh">Ανανέωση</string>
+    <string name="RefreshOK">Ανανέωση επιτυχής</string>
+    <string name="Refrinter">Ρυθμός ανανέωσης δεδομένων</string>
+    <string name="Register">Εγγραφή</string>
+    <string name="Registration">Εγγραφή</string>
+    <string name="Remind">Υπενθύμιση</string>
+    <string name="RemindHint">Γράψε το email σου εδώ</string>
+    <string name="RemindTitle">Στείλε υπενθύμιση στο:</string>
+    <string name="Report">Νέο Θέμα</string>
+    <string name="ReportAnIssue">Υποβολή αιτήματος</string>
+    <string name="ReportIss">Υποβολή</string>
+    <string name="ReportNew">Υποβολή νέου αιτήματος</string>
+    <string name="Reported">Το αίτημα σας καταχωρήθηκε!</string>
+    <string name="RequirementsTitle">Απαιτήσεις συσκευής</string>
+    <string name="Reset">Εκκαθάριση και επανεκκίνηση εφαρμογής</string>
+    <string name="Restartneed">Απαιτείται επανεκκίνηση της εφαρμογής</string>
+    <string name="Return">Επιστροφή</string>
+    <string name="Reverse">Αντιστροφή όλων</string>
+    <string name="STitle">Σύντομος τίτλος</string>
+    <string name="Satellite">Δορυφόρος</string>
+    <string name="SelAll">Επιλογή όλων</string>
+    <string name="SelectaCategory">Επέλεξε μια κατηγορία</string>
+    <string name="SendMail">Αποστολή e-mail</string>
+    <string name="Sendemailwithyourideas">Στείλε την ιδέα σου</string>
+    <string name="Sending">Αποστολή δεδομένων. Παρακαλώ περιμένετε.</string>
+    <string name="Settings">Ρυθμίσεις</string>
+    <string name="Shoot">Κάμερα</string>
+    <string name="Signup">Εγγραφή</string>
+    <string name="State">Κατάσταση</string>
+    <string name="Status">Κατάσταση</string>
+    <string name="Submit">Υποβολή</string>
+    <string name="Submitted">Υποβλήθηκε</string>
+    <string name="SyncData">Συγχρονισμός δεδομένων</string>
+    <string name="System">Επιλογές συστήματος</string>
+    <string name="ToAdd">Για να προσθέσετε ένα νεο αίτημα πρέπει να έχετε λογαριασμό.</string>
+    <string name="URENIO">URENIO</string>
+    <string name="URENIOlink">http://www.urenio.org</string>
+    <string name="Updating">Ενημέρωση</string>
+    <string name="Uploading">Αποστολή</string>
+    <string name="Usage">Στατιστικά χρήσης εφαρμογής</string>
+    <string name="Username">Όνομα χρήστη</string>
+    <string name="ValidEmail">Διεύθυνση e-mail</string>
+    <string name="Version">Έκδοση</string>
+    <string name="ViewComments">Σχόλια</string>
+    <string name="ViewRadius">από τη τρέχουσα θέση.</string>
+    <string name="ViewRange">Ακτίνα παρατήρησης</string>
+    <string name="Viewed">Αναγνώστηκε</string>
+    <string name="Vote">Ψήφισε</string>
+    <string name="Votes">Ψήφοι</string>
+    <string name="Welcome">Καλώς ήρθατε</string>
+    <string name="WhatIsIt">Το Improve My City Mobile προσφέρει στους πολίτες 
+        τη δυνατότητα να βελτιώσουν την πόλη τους σε συνεργασία με την τοπική αυτοδιοίκηση.\n
+        Η εφαρμογή επιτρέπει στους πολίτες ενός δήμου να υποβάλλουν εύκολα και γρήγορα πάσης φύσεως 
+        αιτήματα που αφορούν τη διαβίωση τους, π.χ. σπασμένες λάμπες, απουσία κάδου απορριμμάτων, λακκούβες στο δρόμο,
+         σπασμένα παγκάκια, επιπλέον φωτισμό, κλπ. Τα αιτήματα μεταβιβάζονται στη συνέχεια στην αρμόδια υπηρεσία του 
+         Δήμου όπου και δρομολογείται η διευθέτηση τους.</string>
+    <string name="WhatIsItTitle">Περιγραφή της εφαρμογής</string>
+    <string name="WriteAddress">Γράψτε τη διεύθυνση</string>
+    <string name="Yourfullname">Ονοματεπώνυμο</string>
+    <string name="Yourproposal">Στείλε μας την πρόταση σου</string>
+    <string name="ago">πριν</string>
+    <string name="app_name">IMCity</string>
+    <string name="back">πίσω</string>
+    <string name="balloondesc">Πάτα στο κείμενο για περισσότερες πληροφορίες</string>
+    <string name="bordersInfo">Τα όρια του Δήμου Θέρμης σχεδιάστηκαν βάσει των γεωδεσικών δεδομένων από το
+         \"Δημόσια-Ανοιχτά δεδομένα\" (http://www.geodata.gov.gr/) που τα παρέχει το 
+        \"Ινστιτούτο Πληροφοριακών Συστημάτων - Eρευνητικό Κέντρο Αθηνά\" (http://www.imis.athena-innovation.gr/), και το 
+        \"Εθνικό Κέντρο Δημόσιας Διοίκησης και Αυτοδιοίκησης\" (http://www.opengov.gr)</string>
+    <string name="by">απο</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-el/common_strings.xml -->
+    <eat-comment/>
+    <string msgid="473679118463211576" name="common_android_wear_notification_needs_update_text">"Μια εφαρμογή απαιτεί την ενημέρωση της εφαρμογής Android Wear."</string>
+    <string msgid="3046420540094071256" name="common_android_wear_update_text">"Αυτή η εφαρμογή δεν θα εκτελεστεί εάν δεν ενημερώσετε την εφαρμογή Android Wear."</string>
+    <string msgid="1366439133145190222" name="common_android_wear_update_title">"Ενημέρωση Android Wear"</string>
+    <string msgid="4181637455539816337" name="common_google_play_services_enable_button">"Ενεργοπ. υπηρεσιών Google Play"</string>
+    <string msgid="7627896071867667758" name="common_google_play_services_enable_text">"Αυτή η εφαρμογή δεν θα λειτουργήσει εάν δεν έχετε ενεργοποιήσει τις υπηρεσίες Google Play."</string>
+    <string msgid="529078775174559253" name="common_google_play_services_enable_title">"Ενεργοποίηση υπηρεσιών Google Play"</string>
+    <string msgid="2443362625939284971" name="common_google_play_services_error_notification_requested_by_msg">"Υποβλήθηκε αίτημα από την εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g>"</string>
+    <string msgid="8515591849428043265" name="common_google_play_services_install_button">"Λήψη υπηρεσιών Google Play"</string>
+    <string msgid="8685301130651051380" name="common_google_play_services_install_text_phone">"Αυτή η εφαρμογή δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες λείπουν από το τηλέφωνό σας."</string>
+    <string msgid="1589957570365247855" name="common_google_play_services_install_text_tablet">"Αυτή η εφαρμογή δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες λείπουν από το tablet σας."</string>
+    <string msgid="26645092511305524" name="common_google_play_services_install_title">"Λήψη υπηρεσιών Google Play"</string>
+    <string msgid="4983316348021735578" name="common_google_play_services_invalid_account_text">"Ο συγκεκριμένος λογαριασμός δεν υπάρχει σε αυτήν τη συσκευή. Επιλέξτε έναν διαφορετικό λογαριασμό."</string>
+    <string msgid="1066672360770936753" name="common_google_play_services_invalid_account_title">"Μη έγκυρος λογαριασμός"</string>
+    <string msgid="2583358409598976717" name="common_google_play_services_needs_enabling_title">"Μια εφαρμογή απαιτεί την ενεργοποίηση των Υπηρεσιών Google Play."</string>
+    <string msgid="9038847255613537209" name="common_google_play_services_network_error_text">"Απαιτείται σύνδεση δεδομένων για να συνδεθείτε με τις Υπηρεσίες Google Play."</string>
+    <string msgid="3827284619958211114" name="common_google_play_services_network_error_title">"Σφάλμα δικτύου"</string>
+    <string msgid="8120534356798772974" name="common_google_play_services_notification_needs_installation_title">"Μια εφαρμογή απαιτεί την εγκατάσταση των Υπηρεσιών Google Play."</string>
+    <string msgid="1388129345631079938" name="common_google_play_services_notification_needs_update_title">"Μια εφαρμογή απαιτεί την ενημέρωση των Υπηρεσιών Google Play."</string>
+    <string msgid="1852570676146674985" name="common_google_play_services_notification_ticker">"Σφάλμα Υπηρεσιών Google Play"</string>
+    <string msgid="5194079840165204725" name="common_google_play_services_sign_in_failed_text">"Σφάλμα κατά τη σύνδεση στον συγκεκριμένο λογαριασμό. Επιλέξτε έναν διαφορετικό λογαριασμό."</string>
+    <string msgid="8164948898147532159" name="common_google_play_services_sign_in_failed_title">"Η σύνδεση απέτυχε"</string>
+    <string msgid="4762332809710093730" name="common_google_play_services_unknown_issue">"Άγνωστο πρόβλημα με τις υπηρεσίες Google Play."</string>
+    <string msgid="3542578567569488671" name="common_google_play_services_unsupported_text">"Οι υπηρεσίες Google Play, στις οποίες βασίζονται ορισμένες από τις εφαρμογές σας, δεν υποστηρίζονται στη συσκευή σας. Επικοινωνήστε με τον κατασκευαστή για υποστήριξη."</string>
+    <string msgid="6334768798839376943" name="common_google_play_services_unsupported_title">"Υπηρεσίες Google Play"</string>
+    <string msgid="8932944190611227642" name="common_google_play_services_update_button">"Ενημέρωση"</string>
+    <string msgid="448354684997260580" name="common_google_play_services_update_text">"Αυτή η εφαρμογή θα εκτελεστεί αφού ενημερώσετε τις υπηρεσίες Google Play."</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">"Ενημέρωση υπηρεσιών Google Play"</string>
+    <string msgid="411506735369601515" name="common_open_on_phone">"Άνοιγμα στο τηλέφωνο"</string>
+    <string msgid="9071884888741449141" name="common_signin_button_text">"Σύνδεση"</string>
+    <string msgid="2429381841831957106" name="common_signin_button_text_long">"Συνδεθείτε στο Google"</string>
+    <string msgid="5000919058582214855" name="commono_google_play_services_api_unavailable_text">"Αυτή η εφαρμογή απαιτεί μία ή περισσότερες υπηρεσίες του Google Play που δεν είναι διαθέσιμες προς το παρόν. Επικοινωνήστε με τον προγραμματιστή για βοήθεια."</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values-el/strings.xml -->
+    <eat-comment/>
+    <string name="days">ημέρες</string>
+    <string name="email">e-mail</string>
+    <string name="hours">ώρες</string>
+    <string name="instance">Demo</string>
+    <string name="minutes">λεπτά</string>
+    <string name="municipalityInfo">Η παρούσα εφαρμογή έχει παραμετροποιηθεί για τις ανάγκες του Δήμου θερμής και 
+        είναι συνδεδεμένη με την αντίστοιχη διαδικτυακή εφαρμογή:</string>
+    <string name="noComments">Δεν υπάρχουν σχόλια</string>
+    <string name="now">now</string>
+    <string name="peoplevoted">άτομα ψήφισαν</string>
+    <string name="skipLogin">Επισκέπτης</string>
+    <string name="splash_title">Βελτιώνω την Πόλη μου</string>
+    <string name="tryagain">Λανθασμένο όνομα χρήστη ή κωδικός. Ξαναπροσπαθείστε.</string>
+    <string name="webver">http://www.improve-my-city.com/demo</string>
+</resources>

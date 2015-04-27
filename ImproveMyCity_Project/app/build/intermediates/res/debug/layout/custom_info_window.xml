@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/custom_info_bubble"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/snippet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/badge"
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/balloondesc"
+        android:gravity="center"
+        android:src="@drawable/ic_info" >
+    </ImageView>
+
+</LinearLayout><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/layout/custom_info_window.xml -->

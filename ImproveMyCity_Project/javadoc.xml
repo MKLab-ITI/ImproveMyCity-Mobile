@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="javadoc">
-    <target name="javadoc">
-        <javadoc access="public" author="true" 
-            classpath="libs/FlurryAgent.jar;C:\Program Files\adt-bundle-windows-x86\sdk\platforms\android-10\android.jar;libs/android-support-v4.jar;C:\Program Files\adt-bundle-windows-x86\sdk\tools\support\annotations.jar;../google-play-services_lib/bin/google-play-services_lib.jar;../google-play-services_lib/libs/google-play-services.jar" destdir="doc" doctitle="Improve My City for Android - documentation 3" nodeprecated="false" nodeprecatedlist="true" noindex="false" nonavbar="false" notree="false" packagenames="com.mk4droid.IMC_Utils,com.mk4droid.IMC_Store,com.mk4droid.IMC_Activities,com.mk4droid.IMC_Core,com.mk4droid.IMC_Constructors,com.mk4droid.IMC_Services,com.mk4droid.IMCity_PackDemo,com.google.android.gms" source="1.6" sourcepath="gen;src" splitindex="true" use="true" version="true">
-            <link href="file:/C:/Progra~1/adt-bundle-windows-x86/sdk/docs/reference/"/>
-        </javadoc>
-    </target>
-</project>

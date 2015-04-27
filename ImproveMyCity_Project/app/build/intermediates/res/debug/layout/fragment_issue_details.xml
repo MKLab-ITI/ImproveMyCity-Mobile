@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llIssueDetailsMain"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/svIssueDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_repeat"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llIssueDetails"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- ====================== IMAGE ====================== -->
+
+            <RelativeLayout
+                android:id="@+id/rl_issue_image_detailed"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="#000" >
+
+                <ImageView
+                    android:id="@+id/imvIssue_Full"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_repeater_camera_engraved"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_no_image_full" />
+
+                <TextView
+                    android:id="@+id/tv_issuenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_convex_all"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="1dp"
+                    android:text="# 123"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff" />
+
+                <!-- ============== Status ====================== -->
+
+                <LinearLayout
+                    android:id="@+id/ll_v_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aa000000"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/v_Status_issuedetails_op"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/op" />
+
+                    <View
+                        android:id="@+id/v_Status_issuedetails_acknow"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/graylight" />
+
+                    <View
+                        android:id="@+id/v_Status_issuedetails_cl"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/graylight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tvs_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/ll_v_status"
+                    android:background="#aa000000"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_Status_issuedetails_op"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:shadowColor="#000"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="@string/OpenIssue"
+                        android:textColor="@color/op" />
+
+                    <TextView
+                        android:id="@+id/tv_Status_issuedetails_ack"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:shadowColor="#000"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="@string/AckIssue"
+                        android:textColor="@color/graylight" />
+
+                    <TextView
+                        android:id="@+id/tv_Status_issuedetails_cl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:shadowColor="#000"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="@string/ClosedIssue"
+                        android:textColor="@color/graylight" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- =================  TITLE SECTION  =================== -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvTitleIssDetB"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="[Title of issue]"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!-- ========= DESCRIPTION =================== -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+                android:background="#77775555"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2px"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:layout_marginTop="1px"
+                    android:background="#fff"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:ellipsize="end"
+                    android:text="Description Content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- ================ Category ===================== -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+                
+                android:background="#77775555"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCategContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2px"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:layout_marginTop="1px"
+                    android:background="#fff"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Category Content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- ============= ADDRESS ======================== -->
+
+            <LinearLayout
+                android:id="@+id/lliss_det"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+                android:background="#77775555"
+                android:orientation="vertical"
+                android:paddingBottom="2px"
+                android:paddingLeft="1px"
+                android:paddingRight="1px"
+                android:paddingTop="1px" >
+
+                <!-- The map -->
+
+                <RelativeLayout
+                    android:id="@+id/lliss_det_map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="175dp"
+                    android:background="#fff"
+                    android:padding="10dp" />
+                
+
+                <LinearLayout
+                    android:id="@+id/lliss_det_address_first_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewAddressContent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.8"
+                        android:text="Address Content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#555" />
+                </LinearLayout>
+
+                <!-- ============= Author and date ========================= -->
+                <TextView
+                    android:id="@+id/tvSubmitted"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diag_gray_repeater"
+                    android:gravity="center"
+                    android:paddingBottom="-5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="-5dp"
+                    android:text="@string/Submitted"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- =====================   Voting    ========================= -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#77775555"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/tr_votes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/buttonVote"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/Vote"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textViewVotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/buttonVote"
+                        android:layout_alignBottom="@+id/buttonVote"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/vote_icon"
+                        android:drawablePadding="10dp"
+                        android:text="215 people voted"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- ==============  COMMENTS BUTTON ========================= -->
+
+            <Button
+                android:id="@+id/btCommentsSW"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/ViewComments"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/layout/fragment_issue_details.xml -->

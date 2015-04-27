@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_imc_registration_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:textColor="#000"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/bt_imc_register_completed_close"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient_green"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/Finish"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+</LinearLayout>
+

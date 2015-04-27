@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrNIB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_repeater"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:shadowColor="@color/holo"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:text="@string/Location"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:shadowColor="#000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/Dragpointer"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#888" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/imageview_border"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/flmapnewissue"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_margin="5dp"
+                android:background="#888"
+                android:padding="1dp" >
+            </FrameLayout>
+            
+            <ImageView
+            android:id="@+id/imv_overlaymap_NIB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/transparent" />         
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/diag_gray_repeater"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/Address"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btReport_new_issue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bt_custom_click_orange"
+            android:padding="15dp"
+            android:text="@string/ReportIss"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/layout/framelayout_newissue_b.xml -->

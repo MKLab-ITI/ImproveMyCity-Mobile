@@ -21,8 +21,11 @@ ImproveMyCity-Mobile source code is licensed under the [GNU Affero General Publi
 
 ### Changelog
 
-#### Version 2.77
-Improved speed, stability, graphics against previous release (v2.03)
+#### Version 2.8.1
+- Imported and compiled with Android Studio
+- Fixed issues with the connectivity with IMC web v2.6.0 (images of categories are not within JSON object)
+- Fixed bug with Gallery attach image
+- This version was tested using Joomla 2.5.28 and IMCweb v.2.60 with IDE Android Studio 1.1.0. It is directly connected to http://www.improve-my-city.com/demos
 
 ## Donate
 Help us make **Improve My City** better.

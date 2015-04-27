@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="Language">
+        <item>el - Ελληνικά</item>
+        <item>en - English</item>
+    </string-array>
+    <string-array name="maxno_issues">
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="maxno_issues_entries">
+        <item>20 issues</item>
+        <item>40 issues (recommended)</item>
+        <item>80 issues</item>
+        <item>200 issues</item>
+        <item>400 issues</item>
+    </string-array>
+    <string-array name="refrateoptions">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="refrateoptions_entries">
+        <item>1 minute</item>
+        <item>5 minutes (recommended)</item>
+        <item>10 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <color name="MainThemeColor">#790102</color>
+    <color name="acknowy">#FFFFE600</color>
+    <color name="cl">#FF2CC1F9</color>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/common_colors.xml -->
+    <eat-comment/>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <color name="graylight">#FFDDDDDD</color>
+    <color name="graymid">#FF888888</color>
+    <color name="holo">#33b5e5</color>
+    <color name="mybackcolor">#FFeeeeee</color>
+    <color name="mytextbackcolor">#FFFFFFFF</color>
+    <color name="mytextcolor">#FF000000</color>
+    <color name="mytextsecondarycolor">#FF888888</color>
+    <color name="op">#FF10D010</color>
+    <color name="orange">#fffe4c18</color>
+    <color name="orange_transparent">#88fe4c18</color>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_colors.xml -->
+    <eat-comment/>
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_hint_foreground_holo_dark">#808080</color>
+    <color name="wallet_hint_foreground_holo_light">#808080</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#0000ee</color>
+    <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
+    <declare-styleable name="CustomWalletTheme"><attr format="enum" name="windowTransitionStyle"><enum name="slide" value="1"/><enum name="none" value="2"/></attr></declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/></declare-styleable>
+    <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
+    <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/version.xml -->
+    <eat-comment/>
+    <integer name="google_play_services_version">7095000</integer>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="About">About</string>
+    <string name="AccountOperations">Account operations</string>
+    <string name="AckIssue">Acknowledged</string>
+    <string name="AddComment">Leave a Comment</string>
+    <string name="Address">Address</string>
+    <string name="AgoBy">ago by</string>
+    <string name="All">All</string>
+    <string name="AllIssues">All Issues</string>
+    <string name="AlreadyVoted">Already voted</string>
+    <string name="Analytics">Share analytics</string>
+    <string name="ApplicationData">Application data</string>
+    <string name="Areyousure">Are you sure</string>
+    <string name="Attach">Attach Image</string>
+    <string name="Attachanimage">Attach an image</string>
+    <string name="Authors">Authors</string>
+    <string name="CERTH">CERTH - ITI</string>
+    <string name="CERTHlink">http://improve-my-city.com/</string>
+    <string name="Camera">Camera</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Categories">Categories</string>
+    <string name="Category">Category</string>
+    <string name="Clear">Clear</string>
+    <string name="ClosedIssue">Closed</string>
+    <string name="Comment">Comment</string>
+    <string name="CommentCreat">Comment created</string>
+    <string name="Contact">Contact</string>
+    <string name="ContactInfo">Visit the cite of Improve My City if you wish to adapt the application to your needs: http://improve-my-city.com/</string>
+    <string name="ContactInfoTitle">Improve My City for your municipality</string>
+    <string name="Createanaccount">Only your full name can be written with Greek letters.</string>
+    <string name="CustAccount">User account</string>
+    <string name="Deleteallissuedatastoredlocallytoyourphone">Delete all issue data stored locally to your phone</string>
+    <string name="Deleted">Deleted</string>
+    <string name="Description">Description</string>
+    <string name="Details">Details</string>
+    <string name="DistanceView">Issues inside new range</string>
+    <string name="Downloaded">Downloaded</string>
+    <string name="Downloading">Downloading</string>
+    <string name="DownloadingFirst">Downloading for the first time, please wait 5 seconds.</string>
+    <string name="Dragndrop">Drag \'n drop</string>
+    <string name="Dragpointer">Drag pointer to your preferred location</string>
+    <string name="FailMes">Failed due to an error. Τry again later.</string>
+    <string name="FeaturesTitle">Features</string>
+    <string name="Filter">Filters</string>
+    <string name="Finish">Finish</string>
+    <string name="FirstSecondName">First and Second name*</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Givealsoyourname">Give also your name!</string>
+    <string name="Giveausername">Give a username!</string>
+    <string name="GreekChars">Greek letters allowed</string>
+    <string name="IMCAllow">Improve My City allows citizens to report issues related to their neighborhood.</string>
+    <string name="Icannotfindyourpos">I can not find your position!</string>
+    <string name="IdonothaveA">I do not have an account</string>
+    <string name="Iforgot">I forgot my password</string>
+    <string name="IncorUser">Username or password are incorrect. Registered?</string>
+    <string name="Information">Information</string>
+    <string name="IssueReported">Issue reported</string>
+    <string name="Issueoutofmunicipalitylimits">Issue out of municipality limits</string>
+    <string name="Issueposition">Issue position</string>
+    <string name="Issues">Issues</string>
+    <string name="IssuesMaxNo">Max number of recent issues to download</string>
+    <string name="IssuesNo">Number of issues to download</string>
+    <string name="IssuesNoCh">Latest issues list</string>
+    <string name="LangSel">Language selection</string>
+    <string name="Language">Language</string>
+    <string name="LatestComments">LatestComments</string>
+    <string name="LatinChars">Latin characters</string>
+    <string name="List">List</string>
+    <string name="Location">Location</string>
+    <string name="LocationCh">Issues around your new location</string>
+    <string name="LogOut">Log out</string>
+    <string name="LoggedOut">Logged out</string>
+    <string name="Login">Login</string>
+    <string name="LoginRegisterRemind">Login/Register/Remind</string>
+    <string name="Logintoadd">Log in to add new issue</string>
+    <string name="LongerDescription">Description should be more than 3 letters</string>
+    <string name="LongerTitle">Title should be more than 3 letters.</string>
+    <string name="Map">Map</string>
+    <string name="MoreThan6Chars">More than 6 characters</string>
+    <string name="MyIssues">My Issues</string>
+    <string name="MyIssuesHint">My issues (only if signed in)</string>
+    <string name="NewDistance">Issues within new range</string>
+    <string name="NewFilters">Issues filtered</string>
+    <string name="NewIssueCh">Refreshing data to get the new issue</string>
+    <string name="NewIssues">New issues</string>
+    <string name="NewLocation">Issues around new location</string>
+    <string name="Next">Next</string>
+    <string name="NoGPSnoWiFi">No GPS, No Wi-Fi location tracking</string>
+    <string name="NoInternet">No Internet</string>
+    <string name="NormalMap">Normal</string>
+    <string name="NotValidEmail">Not valid e-mail</string>
+    <string name="Notification">Notification</string>
+    <string name="OnProgress">On Progress</string>
+    <string name="OnlyRegistered">Only registered users can comment or vote.</string>
+    <string name="OpenIssue">Open</string>
+    <string name="OpinionReport">
+        Report your opinion by e-mail at improvemycitymobile@gmail.com
+    </string>
+    <string name="Password">Password</string>
+    <string name="PasswordShorter">Password should be less than 16 characters</string>
+    <string name="Photo">Photo</string>
+    <string name="PressBackFirst">Press back first</string>
+    <string name="PressLogin">Press to login.</string>
+    <string name="Refresh">Refresh</string>
+    <string name="RefreshOK">Refresh OK</string>
+    <string name="Refrinter">Refresh rate interval</string>
+    <string name="Register">Register</string>
+    <string name="Registration">Registration</string>
+    <string name="Remind">Remind</string>
+    <string name="RemindHint">Write your e-mail here</string>
+    <string name="RemindTitle">Send a reminder to:</string>
+    <string name="Report">New Issue</string>
+    <string name="ReportAnIssue">Report an issue</string>
+    <string name="ReportIss">Report issue</string>
+    <string name="ReportNew">Reporting new issue</string>
+    <string name="Reported">Your issue has been reported!</string>
+    <string name="RequirementsTitle">Device requirements</string>
+    <string name="Reset">Reset and restart application</string>
+    <string name="Restartneed">Restart is needed</string>
+    <string name="Return">Return</string>
+    <string name="Reverse">Reverse all</string>
+    <string name="STitle">Short Title</string>
+    <string name="Satellite">Satellite</string>
+    <string name="SelAll">Select all</string>
+    <string name="SelectaCategory">Select a Category</string>
+    <string name="SendMail">Send e-mail</string>
+    <string name="Sendemailwithyourideas">Send your idea</string>
+    <string name="Sending">I am sending your data. Please wait.</string>
+    <string name="Settings">Settings</string>
+    <string name="Shoot">Shoot</string>
+    <string name="Signup">Sign up</string>
+    <string name="State">State</string>
+    <string name="Status">Status</string>
+    <string name="Submit">Submit</string>
+    <string name="Submitted">Submitted</string>
+    <string name="SyncData">Synchronizing Data</string>
+    <string name="System">System</string>
+    <string name="ToAdd">To add a new issue you must have an account.</string>
+    <string name="URENIO">URENIO</string>
+    <string name="URENIOlink">http://www.urenio.org</string>
+    <string name="Updating">Updating</string>
+    <string name="Uploading">Uploading</string>
+    <string name="Usage">Application usage data</string>
+    <string name="Username">Username</string>
+    <string name="ValidEmail">Valid e-mail address</string>
+    <string name="Version">Software version</string>
+    <string name="ViewComments">View Comments</string>
+    <string name="ViewRadius">from current position.</string>
+    <string name="ViewRange">Viewing range</string>
+    <string name="Viewed">Viewed</string>
+    <string name="Vote">Vote</string>
+    <string name="Votes">Votes</string>
+    <string name="Welcome">Welcome</string>
+    <string name="WhatIsIt">
+        Improve My City Mobile empowers users to improve their city in collaboration with local administration.
+        The application allows citizens to report all types of issues related to their neighborhood such as, 
+        broken lamps, abandoned cars, trashcan absence, etc. The reported issues are immediately transferred to 
+        the appropriate municipality department in order to get fixed.
+    </string>
+    <string name="WhatIsItTitle">Description</string>
+    <string name="WriteAddress">Write address</string>
+    <string name="Yourfullname">Your full name</string>
+    <string name="Yourproposal">Send us your proposal</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="accept">Accept</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="ago">ago</string>
+    <string name="app_name">IMCity</string>
+    <string name="back">back</string>
+    <string name="balloondesc">Click on text balloon for more details</string>
+    <string name="bordersInfo">The municipality borders were constructed using the geodesic data from the site 
+        \"Public-Open data\" (http://www.geodata.gov.gr/) provided by the 
+        \"Institute for the Management of Information Systems Research Center - Athena\" (http://www.imis.athena-innovation.gr/) and the 
+        \"National Centre for Public Administration and Local Government\" (http://www.opengov.gr)</string>
+    <string name="by">by</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values/common_strings.xml -->
+    <eat-comment/>
+    <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text">This app won\'t run unless you update the Android Wear app.</string>
+    <string msgid="6006316683626838685" name="common_android_wear_update_title">Update Android Wear</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">This app won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="commono_google_play_services_api_unavailable_text">This app requires one or more Google Play services that are not currently
+available. Please contact the developer for assistance.</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title">Create calendar event</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="days">days</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="decline">Decline</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="email">e-mail</string>
+    <string name="hours">hours</string>
+    <string name="instance">Demo</string>
+    <string name="minutes">minutes</string>
+    <string name="municipalityInfo">
+        This app has been customized for the needs of the municipality of Thermi - Thessaloniki and is fully 
+        interconnected with the corresponding web-based application:</string>
+    <string name="noComments">No Comments</string>
+    <string name="now">now</string>
+    <string name="peoplevoted">people voted</string>
+    <string name="skipLogin">Guest</string>
+    <string name="splash_title">Improve My City</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
+    <string name="store_picture_title">Save image</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="tryagain">Wrong username or password. Try again.</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_strings.xml -->
+    <eat-comment/>
+    <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="webver">http://www.improve-my-city.com/demo</string>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="PreferencesTheme" parent="@android:style/Theme.Light.NoTitleBar"/>
+    <style name="SpinnerCategTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">#fff</item>
+    </style>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_iap_style.xml -->
+    <eat-comment/>
+    <style name="Theme.IAPTheme" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_styles.xml -->
+    <eat-comment/>
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48dp</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+    <!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="grayBox">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#77775555</item>
+        <item name="android:orientation">vertical</item>
+        
+    </style>
+    <style name="titleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">#00000000</item>
+    </style>
+</resources>

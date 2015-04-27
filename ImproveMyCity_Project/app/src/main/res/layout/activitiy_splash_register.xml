@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:background="@drawable/bg_repeat_transparent"    
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_main_theme_color"    
+            android:paddingBottom="20dp"
+            android:orientation="vertical" >
+   
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imvIMCLogo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="14dp"
+                        android:src="@drawable/imc_logo_plain" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_app_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/splash_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff"
+                        android:typeface="normal" />
+
+                    <View
+                        android:id="@+id/linethemeA"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/solid_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_splash_instance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                                       android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/instance"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_repeat"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/linethemeshA"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ffff997a" 
+                />
+            <View
+                android:id="@+id/linethemeB"
+                android:layout_width="fill_parent"
+                android:layout_height="8px"
+                android:background="@drawable/solid_orange" 
+                android:shadowColor="#a3f0f0"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"/>
+             <View
+                android:id="@+id/linethemeshB"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#aaa3f0f0" 
+                />
+
+            <EditText
+                android:id="@+id/et_username_splash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/Username"
+                
+                
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorHint="#bbb"
+                android:drawableLeft="@drawable/username_icon24"
+                android:drawablePadding="5dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_password_splash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorHint="#bbb"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btLoginSplash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_custom_click_orange"
+                    android:onClick="onClick"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/Login"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff"
+         
+                     />
+                
+                <Button
+                    android:id="@+id/btSkipLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/skipLogin"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#555" />
+
+                
+            </LinearLayout>
+
+            <View
+                android:id="@+id/l1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#aaa" />
+
+            <TextView
+                android:id="@+id/tvRegisterSplash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:text="@string/Signup"
+                android:textColor="#777"
+                android:shadowColor="#aaa3f0f0"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="0.3" />
+
+            <TextView
+                android:id="@+id/tvRemindSplash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:text="@string/ForgotPassword"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#777"
+                android:shadowColor="#aaa3f0f0"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="0.3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

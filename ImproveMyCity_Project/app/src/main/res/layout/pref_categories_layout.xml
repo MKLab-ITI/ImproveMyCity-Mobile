@@ -1,0 +1,28 @@
+<!-- Layout used for PreferenceCategory Separator in a Setup , PreferenceActivity. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+    
+<TextView 
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:id="@+android:id/title"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Test my day"
+    android:background="#00000000"
+    android:textColor="@color/holo"
+/>
+<View 
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="@color/holo"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    />
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srcv_filters"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/llfilters"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_repeater"
+        android:orientation="vertical" >
+
+        <!-- STATUS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:shadowColor="@color/holo"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.2"
+            android:text="@string/Status"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/graymid"
+            android:orientation="vertical"
+            android:padding="1dp" >
+
+            <CheckedTextView
+                android:id="@+id/ctv_Open"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/mytextbackcolor"
+                android:checkMark="@drawable/filters_check_mark_small"
+                android:checked="true"
+                android:drawableLeft="@drawable/ic_open"
+                android:drawablePadding="10dp"
+                
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:tag="OpenSW"
+                android:text="@string/OpenIssue"
+                android:textColor="#000" />
+
+            <CheckedTextView
+                android:id="@+id/ctv_Ack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/mytextbackcolor"
+                android:checkMark="@drawable/filters_check_mark_small"
+                android:checked="true"
+                android:drawableLeft="@drawable/ic_ack"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:tag="AckSW"
+                android:text="@string/AckIssue"
+                android:textColor="#000" />
+
+            <CheckedTextView
+                android:id="@+id/ctv_Closed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mytextbackcolor"
+                android:drawableLeft="@drawable/ic_closed"
+                android:drawablePadding="10dp"
+                android:checkMark="@drawable/filters_check_mark_small"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:tag="ClosedSW"
+                android:text="@string/ClosedIssue"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:shadowColor="@color/holo"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.2"
+            android:text="@string/Categories"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/graymid"
+            android:orientation="vertical"
+            android:padding="1dp" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/diag_gray_repeater"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btSelectAllFilters"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/SelAll" />
+
+                <Button
+                    android:id="@+id/btReverseAllFilters"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/Reverse" />
+            </TableRow>
+
+            <ExpandableListView
+                android:id="@+id/elvMain"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:background="#fff"
+                android:cacheColorHint="@color/mybackcolor"
+                android:groupIndicator="@drawable/exp_group_statelist"
+                android:padding="10dp" 
+                android:dividerHeight="1dp"
+    			android:divider="@drawable/gradient_black"
+    			android:childDivider="@drawable/gradient_gray"
+    			android:footerDividersEnabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/layout/fragment_filters.xml -->

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etSetupUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/Username"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etSetupPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvLoginMesLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btSetupLoginCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_custom_click_gray"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="@string/Cancel"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btSetupLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_custom_click_orange"
+            android:padding="15dp"
+            android:text="@string/Login"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

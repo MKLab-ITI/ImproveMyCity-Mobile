@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlcategitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckedTextView
+        android:id="@+id/categName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/categIcon"
+        android:clickable="false"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:drawableRight="@android:drawable/btn_radio"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="false"
+        android:text="@string/Category"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000" />
+
+    <ImageView
+        android:id="@+id/categIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+         />
+
+</RelativeLayout>

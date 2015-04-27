@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-9af80d0a7202db710ec55cd67c13de232c3f281b.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-f084abe751aba09ff891955e6ac664a48fa3da20.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-5f1adaa5ba6a8336321d8b290816bd892eeac241.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-2600edb31723c2198bda5150397aa21e57c9ae6e.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-4e36707a30a18f144c320e575c59e6757563f411.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-236b14797626e58892c7ef3168b973124cd95876.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-e72c3607ee9be762c47e14620f17c561a3903133.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-006fe39e3442d4fd2cfc83e5a70b7e3b974b1447.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-57881cce344455ff30ddebdc946197b5d58a33bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-3057a61ed94b383f6442d2ce4e1a2c1332ae8bdb.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-d6d65dcc2c889d70df9b6e38d776cf30b47b66d1.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-48b2bba509731ffa666749f7a7fbdb103a20150e.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\libs\FlurryAgent.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dc458794cf6369ca9d70c9d23b77bbf44d4298a1">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\FlurryAgent-74dcc642b70a8f7855e2aa6b5cef60dc2e2b98ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-758365a316dcd045196ebbc20805ab3db163ad64.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-a87458410bc7870d7c99ba52692041f19b54147c.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-66e6b2b159164b4be159309b8ca8b2d064833c91.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-772f8f41dc737a724690c2f7fe8c3fc1fa606073.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-5dab9be32d8097cb71a23bd144423e507bcff684.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-1a8735f5c52ca5823acd42bfeb63138685aa1800.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-a547fefe9013fb57b39129da364d66d57e3a2dbb.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-b32e5726d4ad1610cc073cc8b28d23768ab24474.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-44888cc98df7a7732513d1f27539d6f6644042f8.jar" />
+    </item>
+    <item
+        jar="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="C:\Users\jimver_user_laptop\Desktop\VerveridisCode\AStudio\ImproveMyCity-Mobile\ImproveMyCity_Project\app\build\intermediates\pre-dexed\debug\classes-64004069197de9f7a1564d9e5e920122a2f0c59e.jar" />
+    </item>
+
+</items>

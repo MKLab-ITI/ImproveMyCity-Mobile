@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_repeat"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- What is it -->
+
+        <TextView
+            android:id="@+id/titleA"
+            style="@style/titleStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/splash_title" />
+
+        <LinearLayout
+            style="@style/grayBox"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tvWhatIsIt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2px"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:autoLink="web"
+                android:background="#fff"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="@string/WhatIsIt" />
+        </LinearLayout>
+
+        <!-- MunicipalityInfo -->
+
+        <TextView
+            android:id="@+id/titleB"
+            style="@style/titleStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/instance" />
+
+        <LinearLayout
+            style="@style/grayBox"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tvMuncipalityInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:autoLink="web"
+                android:background="#fff"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="@string/municipalityInfo" />
+
+            <TextView
+                android:id="@+id/tvMuncipalityInfoB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2px"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:autoLink="web"
+                android:background="#ccc"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="@string/webver" />
+        </LinearLayout>
+
+        <!-- Borders Info -->
+
+        <TextView
+            android:id="@+id/titleC"
+            style="@style/titleStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/ApplicationData" />
+
+        <LinearLayout
+            style="@style/grayBox"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tvMuncipalityBordersInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2px"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:autoLink="web"
+                android:background="#fff"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="@string/bordersInfo" />
+        </LinearLayout>
+
+        <!-- Features -->
+        <TextView
+            android:id="@+id/titleF"
+            style="@style/titleStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Contact" />
+
+        <LinearLayout
+            style="@style/grayBox"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tvOpinionReport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2px"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:autoLink="web"
+                android:background="#fff"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="@string/OpinionReport" />
+
+            <Button
+                android:id="@+id/btSendMail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/SendMail" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleG"
+            style="@style/titleStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/ContactInfoTitle" />
+
+        <LinearLayout
+            style="@style/grayBox"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tvContactInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                
+                android:autoLink="all"
+                android:background="#fff"
+                android:linksClickable="true"
+                android:padding="5dp"
+                android:text="@string/ContactInfo" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginBottom="2px"
+                android:background="#fff">
+                
+                
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+               >
+
+                <ImageButton
+                    android:id="@+id/imbt_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.33"
+                    android:scaleType="centerInside"
+                    android:background="#fff"
+                    android:src="@drawable/ic_email_200" />
+
+                <ImageButton
+                    android:id="@+id/imbt_mklab"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="60dp"
+                    android:scaleType="centerInside"
+                    android:background="#fff"
+                    android:src="@drawable/logo_certh" />
+
+                <ImageButton
+                    android:id="@+id/imbt_urenio"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="60dp"
+                    android:background="#fff"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo_urenio" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:background="#fff"
+                android:paddingTop="5dp"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.33"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="@string/Contact"/>
+                
+                <TextView
+                    android:id="@+id/tv_contactCERTH"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="@string/CERTH"/>
+                
+                <TextView
+                    android:id="@+id/tv_contactURENIO"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="@string/URENIO"/>
+                
+            
+                </TableRow>
+            
+            </TableLayout>
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/AStudio/ImproveMyCity-Mobile/ImproveMyCity_Project/app/src/main/res/layout/activity_information_detailed.xml -->
