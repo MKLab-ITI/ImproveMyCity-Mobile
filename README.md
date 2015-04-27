@@ -1,5 +1,5 @@
 # ImproveMyCity Mobile :: Android version
-New: We changed the IDE from Eclipse to Android Studio starting from IMC v2.8.1
+New: We changed the IDE from Eclipse to Android Studio starting from IMC v2.8.1i
 
 ![Screenshots from the application](http://www.improve-my-city.com/demo/templates/improvemycity/images/AndroidIMCPhone.png)
 
@@ -26,7 +26,7 @@ ImproveMyCity-Mobile source code is licensed under the [GNU Affero General Publi
 - Imported and compiled with Android Studio
 - Fixed issues with the connectivity with IMC web v2.6.0 (images of categories are not within JSON object)
 - Fixed bug with Gallery attach image
-- This version was tested using Joomla 2.5.28 and IMCweb v.2.60 with IDE Android Studio 1.1.0. It is directly connected to http://www.improve-my-city.com/demos
+- This version was tested using Joomla 2.5.28 and IMCweb v2.6.0 with IDE Android Studio 1.1.0. It is directly connected to http://www.improve-my-city.com/demos
 
 ## Donate
 Help us make **Improve My City** better.
