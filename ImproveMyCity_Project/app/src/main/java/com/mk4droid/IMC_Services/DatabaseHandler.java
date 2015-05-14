@@ -538,25 +538,34 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 					//JSONObject cpOb = new JSONObject(CategParams);
 					String CategIconPath = CategParams; // cpOb.getString("image");
 
-					String fullPath = Constants_API.COM_Protocol + Constants_API.ServerSTR +
-                              Constants_API.remoteImages  + CategIconPath;
+					Log.e("CategIconPath", " " + CategIconPath);
 
-					// Download icon
-				    byte[] CategIcon = Download_Data.Down_Image(fullPath );
-                    Bitmap CategIconBM = null;
+					Bitmap CategIconBM = null;
+					byte[] CategIcon = null;
 
-                    if (CategIcon!=null) {
+					if (CategIconPath.length()==0){
+						CategIconBM = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.map_categ_default_icon);
+					} else {
 
-                        //------- Resize icon based on the device needs and store in db. --------------------
-                        CategIconBM = BitmapFactory.decodeByteArray(CategIcon, 0, CategIcon.length);
-                        CategIconBM = Bitmap.createScaledBitmap(CategIconBM, (int) ((float) Fragment_Map.metrics.densityDpi / 4.5),
-                                (int) ((float) Fragment_Map.metrics.densityDpi / 4), true);
-                        //---------------------------------------------------------
-                        bdown += CategIcon.length;
-                    } else {
-                        CategIconBM = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.map_categ_default_icon);
-                    }
+						String fullPath = Constants_API.COM_Protocol + Constants_API.ServerSTR +
+								Constants_API.remoteImages + CategIconPath;
 
+						Log.e("fullPath", fullPath);
+
+						// Download icon
+						CategIcon = Download_Data.Down_Image(fullPath);
+
+						if (CategIcon != null) {
+							//------- Resize icon based on the device needs and store in db. --------------------
+							CategIconBM = BitmapFactory.decodeByteArray(CategIcon, 0, CategIcon.length);
+							CategIconBM = Bitmap.createScaledBitmap(CategIconBM, (int) ((float) Fragment_Map.metrics.densityDpi / 4.5),
+									(int) ((float) Fragment_Map.metrics.densityDpi / 4), true);
+							//---------------------------------------------------------
+							bdown += CategIcon.length;
+						} else {
+							CategIconBM = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.map_categ_default_icon);
+						}
+					}
                     ByteArrayOutputStream stream = new ByteArrayOutputStream();
                     CategIconBM.compress(Bitmap.CompressFormat.PNG, 100, stream);
                     CategIcon = stream.toByteArray();

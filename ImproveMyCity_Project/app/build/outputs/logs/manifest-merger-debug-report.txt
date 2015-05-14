@@ -1,8 +1,6 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:7
 		INJECTED from AndroidManifest.xml:0:0
@@ -13,6 +11,8 @@ ADDED from AndroidManifest.xml:2:1
 		ADDED from AndroidManifest.xml:4:7
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 	android:installLocation
 		ADDED from AndroidManifest.xml:5:35
 uses-sdk
@@ -155,10 +155,10 @@ ADDED from AndroidManifest.xml:20:5
 		ADDED from AndroidManifest.xml:20:19
 uses-feature#0x00020000
 ADDED from AndroidManifest.xml:22:5
-	android:required
-		ADDED from AndroidManifest.xml:22:52
 	android:glEsVersion
 		ADDED from AndroidManifest.xml:22:19
+	android:required
+		ADDED from AndroidManifest.xml:22:52
 application
 ADDED from AndroidManifest.xml:24:5
 MERGED from com.android.support:support-v4:22.0.0:22:5
@@ -248,18 +248,18 @@ MERGED from com.android.support:support-v4:22.0.0:22:5
 		ADDED from AndroidManifest.xml:26:19
 service#com.mk4droid.IMC_Services.Service_Data
 ADDED from AndroidManifest.xml:29:9
-	android:exported
-		ADDED from AndroidManifest.xml:30:13
 	android:enabled
 		ADDED from AndroidManifest.xml:29:18
+	android:exported
+		ADDED from AndroidManifest.xml:30:13
 	android:name
 		ADDED from AndroidManifest.xml:29:41
 service#com.mk4droid.IMC_Services.Service_Location
 ADDED from AndroidManifest.xml:31:9
-	android:exported
-		ADDED from AndroidManifest.xml:32:13
 	android:enabled
 		ADDED from AndroidManifest.xml:31:18
+	android:exported
+		ADDED from AndroidManifest.xml:32:13
 	android:name
 		ADDED from AndroidManifest.xml:31:41
 meta-data#com.google.android.gms.version
@@ -290,16 +290,16 @@ MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.0.0:21:9
-	android:name
-		ADDED from AndroidManifest.xml:35:20
 	android:value
 		ADDED from AndroidManifest.xml:35:66
+	android:name
+		ADDED from AndroidManifest.xml:35:20
 meta-data#com.google.android.maps.v2.API_KEY
 ADDED from AndroidManifest.xml:37:9
-	android:name
-		ADDED from AndroidManifest.xml:37:20
 	android:value
 		ADDED from AndroidManifest.xml:38:20
+	android:name
+		ADDED from AndroidManifest.xml:37:20
 activity#com.mk4droid.IMC_Activities.Activity_Thinking
 ADDED from AndroidManifest.xml:41:9
 	android:label

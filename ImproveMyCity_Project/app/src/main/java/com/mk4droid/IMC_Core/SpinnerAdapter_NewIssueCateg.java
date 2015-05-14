@@ -38,6 +38,7 @@ public class SpinnerAdapter_NewIssueCateg extends ArrayAdapter<Category>{
 
 	private Activity context;
 	ArrayList<Category> data = null;
+
 	final float dens;
 	int NCategs = 0;
 	Bitmap[] bmicons;
@@ -49,6 +50,7 @@ public class SpinnerAdapter_NewIssueCateg extends ArrayAdapter<Category>{
 		super(context, resource, data);
 		
 		this.context = context;
+
 		this.data = data;
 
 		dens = getContext().getResources().getDisplayMetrics().density;
@@ -56,7 +58,7 @@ public class SpinnerAdapter_NewIssueCateg extends ArrayAdapter<Category>{
 		NCategs = data.size();
 		bmicons = new Bitmap[NCategs];
 
-		for (int i=0; i < NCategs; i++){
+		for (int i=1; i < NCategs; i++){
 			Category item = data.get(i);
 			bmicons[i] = BitmapFactory.decodeByteArray(item._icon, 0, item._icon.length);
 			float scfact = 1;
@@ -91,22 +93,28 @@ public class SpinnerAdapter_NewIssueCateg extends ArrayAdapter<Category>{
 				ImageView cat_imv   = (ImageView) row.findViewById(R.id.categIcon);
 				CheckedTextView cat_tv = (CheckedTextView) row.findViewById(R.id.categName);
 
-				if(cat_imv != null){
+				cat_tv.setCheckMarkDrawable(null);
+
+				if(cat_imv != null && item._icon!=null){
 					Bitmap bmicon = BitmapFactory.decodeByteArray(item._icon, 0, item._icon.length);
 
 					if (item._level == 2)
 						bmicon = Bitmap.createScaledBitmap(bmicon, (int) (45 * dens + 0.5f), (int) (50 * dens + 0.5f), true);
-					else 
+					else
 						bmicon = Bitmap.createScaledBitmap(bmicon, (int) (50 * dens + 0.5f), (int) (55 * dens + 0.5f), true);
 
 					cat_tv.setCompoundDrawablesWithIntrinsicBounds(new BitmapDrawable(bmicon), null, null, null);
-					cat_tv.setCompoundDrawablePadding(20);
-				} 
-				
+				} else {
+					cat_tv.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+
+				}
+
+				cat_tv.setCompoundDrawablePadding(20);
+
 				if(cat_tv != null){
 					cat_tv.setText(item._name);
 					cat_tv.setTextSize(15);
-				} 
+				}
 			} 
 			
         } else { // Before appearance of the Spinner

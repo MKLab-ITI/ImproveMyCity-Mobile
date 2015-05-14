@@ -7,9 +7,11 @@ package com.mk4droid.IMC_Activities;
 
 import android.app.AlertDialog;
 import android.app.Service;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -114,11 +116,16 @@ public class Fragment_NewIssueA extends Fragment {
 	static String descriptionData_STR = "";
 	
 	static int[] SpinnerArrID;  // This contains category ids as in MySQL
-	public static int spPosition = -1;
+	public static int spPosition = 0;
 	static Spinner sp; // spinner of categories
 	SpinnerAdapter_NewIssueCateg adapterSP; // spinner adapter
 	
-	String[] SpinnerArrString;		 
+	String[] SpinnerArrString;
+
+	public static ArrayList<Category> mCatL_Sorted;
+
+	private BroadcastReceiver dataReceiver;
+
 
  	/* 
  	 *  onCreate fragment
@@ -170,33 +177,67 @@ public class Fragment_NewIssueA extends Fragment {
 		
 		
 		//---- Spinner -----
-		ArrayList<Category> mCatL_Sorted = SortCategList(Service_Data.mCategL);
+		//---- Categories Spinner -------------------------------
+		if (Service_Data.mCategL!=null)
+			mCatL_Sorted = SortCategList(Service_Data.mCategL);
+		else{
+			mCatL_Sorted = new ArrayList<Category>();
+		}
+
+		dataReceiver = new BroadcastReceiver() {
+
+			@Override
+			public void onReceive(Context context, Intent intent) {
+				Log.i("Fragment_NewIssueA", "onReceive new issua A");
+				if(Service_Data.mCategL!= null)
+					mCatL_Sorted = SortCategList(Service_Data.mCategL);
+				else{
+					mCatL_Sorted = new ArrayList<Category>();
+				}
+				mCatL_Sorted.add(0, new Category(-1, getActivity().getResources().getString(R.string.SelectaCategory), null, 1, 0, 1));
+
+				SpinnerArrString = initSpinner(mCatL_Sorted);
+
+				sp = (Spinner)vfrag_nIssueA.findViewById(R.id.spinnerCateg);
+
+				adapterSP = new SpinnerAdapter_NewIssueCateg(getActivity(), android.R.layout.simple_spinner_item, mCatL_Sorted);
+
+
+
+				sp.setAdapter(adapterSP);
+
+				sp.setOnItemSelectedListener(new OnItemSelectedListener() {
+					@Override
+					public void onItemSelected(AdapterView<?> parent, View arg1, int arg2, long arg3) {
+						spPosition = arg2;
+					}
+
+					@Override
+					public void onNothingSelected(AdapterView<?> arg0){}
+				});
+
+			}
+		};
+		mCatL_Sorted.add(0, new Category(-1, resources.getString(R.string.SelectaCategory), null, 1, 0, 1));
+
 		SpinnerArrString = initSpinner(mCatL_Sorted);
 
 		sp = (Spinner)vfrag_nIssueA.findViewById(R.id.spinnerCateg);
-		
-		adapterSP = new SpinnerAdapter_NewIssueCateg(getActivity(),    //--- Set spinner adapter --
-												android.R.layout.simple_spinner_item, mCatL_Sorted);
+
+		adapterSP = new SpinnerAdapter_NewIssueCateg(getActivity(), android.R.layout.simple_spinner_item, mCatL_Sorted);
+
 		sp.setAdapter(adapterSP);
-		
-		
-		
+
+
+
 		sp.setOnItemSelectedListener(new OnItemSelectedListener() {
-
 			@Override
-			public void onItemSelected(AdapterView<?> parent, View arg1,
-					int arg2, long arg3) {
-				 
-				if (flagStarter){
-					flagStarter = false;
-				} else {
-					spPosition = arg2;
-				}
+			public void onItemSelected(AdapterView<?> parent, View arg1, int arg2, long arg3) {
+				spPosition = arg2;
 			}
 
 			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
-			}
+			public void onNothingSelected(AdapterView<?> arg0){}
 		});
 		
 		//--------- Title -----
@@ -370,9 +411,18 @@ public class Fragment_NewIssueA extends Fragment {
 			}
 		});
 
+		IntentFilter intentFilter = new IntentFilter("android.intent.action.MAIN");
+		getActivity().registerReceiver(dataReceiver, intentFilter);
+
 
 		return vfrag_nIssueA;
 	}// Endof Create
+
+	@Override
+	public void onDestroyView() {
+		getActivity().unregisterReceiver(dataReceiver);
+		super.onDestroyView();
+	}
 
 	//=============== onActivityResult ===============================
 	/**

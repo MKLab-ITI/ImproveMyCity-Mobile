@@ -33,11 +33,11 @@ public class Constants_API {
 	
 	
     /** Server address. It can be a XXX.XXX.XXX.XXX address instead */
-	public static String ServerSTR      =  "improve-my-city.com/";
+	public static String ServerSTR      = "improve-my-city.com";
 	
 	
 	/** Server path of application */
-	public static String phpExec        = "/demo/";
+	public static String phpExec        =  "/demo/";
 	
 	/** Server path of issue images */ 
 	public static String remoteImages   = "/demo/";
@@ -45,7 +45,7 @@ public class Constants_API {
 	/** Encryption key for transmitting password (16 digits). It should be the same as in your ImproveMyCity joomla component. 
 	 * The default value is 1234567890123456 (choose this as a quick start to connect with your server).
 	 * */
-	public static String EncKey =  "8369971084512071"; // This key is for the demo server
+	public static String EncKey =  "8369971084512071"; // This key is for the demo server // The default is "1234567890123456" ;
 
 
 	/**

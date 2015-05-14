@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.mk4droid.IMCity_PackDemo"
-      android:versionCode="73"
-      android:versionName="2.8.2" android:installLocation="auto">
+      android:versionCode="74"
+      android:versionName="2.8.3" android:installLocation="auto">
     <uses-sdk android:minSdkVersion="10"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
