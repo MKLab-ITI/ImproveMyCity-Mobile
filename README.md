@@ -22,6 +22,10 @@ ImproveMyCity-Mobile source code is licensed under the [GNU Affero General Publi
 
 ### Changelog
 
+#### Version 2.8.3 (14/5/2015)
+- Fix 2 of categories without a png image
+- Fix New issue categories spinner
+
 #### Version 2.8.2
 - Imported and compiled with Android Studio
 - Fixed issues with the connectivity with IMC web v2.6.0 (images of categories are not within JSON object)
